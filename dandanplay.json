@@ -1,0 +1,19 @@
+{
+    "homepage": "http://dandanplay.com/",
+    "description": "Dandanplay Portable",
+    "version": "10.2.0",
+    "url": "http://47.240.64.98/dandanplay_10.1.0.zip",
+    "extract_dir": "dandanplay",
+    "bin": "dandanplay.exe",
+    "shortcuts": [
+        [
+            "dandanplay.exe",
+            "弹弹play"
+        ]
+    ],
+    "persist": [
+        "Config",
+        "Log",
+        "Cache"
+    ]
+}

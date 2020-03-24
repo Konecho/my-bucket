@@ -1,0 +1,22 @@
+{
+    "homepage": "https://mcool.appinn.me/",
+    "description": "极简个性的本地音乐播放器，轻，透明，无边框，嵌入桌面。",
+    "version": "3360",
+    "url": "http://blog-static.cnblogs.com/files/diystar/mcooldev.rar",
+    "hash":"md5:C491400316B34354CD45970E08057941",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\mcool.ini\")) { New-Item \"$dir\\mcool.ini\" | Out-Null }"
+    ],
+    "bin": "mcool.exe",
+    "shortcuts": [
+        [
+            "mcool.exe",
+            "Mcool"
+        ]
+    ],
+    "persist": [
+        "playlists",
+        "plugins",
+        "mcool.ini"
+    ]
+}

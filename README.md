@@ -1,4 +1,8 @@
 # my-bucket
+添加
+```ps
+scoop bucket add my-bucket https://github.com/Konecho/my-bucket
+```
 模板
 ```json
 {
@@ -43,7 +47,8 @@
 可选替代
 ```json
 {
-    "pre_install": [
+    "_comment":"",
+    "pre_install":[
         "function CreateFile([String] $file, [String] $content = $null) {",
         "    if (!(Test-Path \"$persist_dir\\$file\")) {",
         "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
@@ -74,7 +79,16 @@
                 ]
             ]
         }
-    }
+    },
+    "bin": [
+        "program.exe",
+        [
+            "program.exe",
+            "alias",
+            "--arguments"
+        ]
+    ]
+    
     
 }
 ```

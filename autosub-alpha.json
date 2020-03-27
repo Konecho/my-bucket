@@ -1,0 +1,28 @@
+{
+    "homepage": "https://github.com/BingLingGroup/autosub/",
+    "description": "Autosub是一个字幕自动生成工具。它能使用Auditok来自动检测语音区域，通过ffmpeg根据语音区域来切割音频，通过多个API将语音转为文字，以及通过py-googletrans将字幕文本翻译。",
+    "license": "GPLv3",
+    "version": "0.5.6",
+    "url": "https://github.com/BingLingGroup/autosub/releases/download/0.5.6-alpha/autosub-0.5.6-alpha-win-x64-nuitka.7z",
+    "hash":"SHA256:25943e876cb4768fd935139f18a37ee5951b4fdef63eed494960da3add2e07b6",
+    "extract_dir": "autosub",
+    
+    "bin": [
+        [
+            "autosub/autosub.exe",
+            "autosub"
+        ],
+        [
+            "autosub/autosub.exe",
+            "autosub-help",
+            "-h"
+        ]
+    ],
+    "checkver":{
+        "url": "https://github.com/BingLingGroup/autosub/releases",
+        "regex": "BingLingGroup/autosub/tree/([\\d.]+)-alpha"
+    },
+    "autoupdate": {
+        "url": "https://github.com/BingLingGroup/autosub/releases/download/$version-alpha/autosub-$version-alpha-win-x64-nuitka.7z"
+    }
+}

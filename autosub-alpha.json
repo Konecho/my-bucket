@@ -18,10 +18,7 @@
             "-h"
         ]
     ],
-    "checkver":{
-        "url": "https://github.com/BingLingGroup/autosub/releases",
-        "regex": "BingLingGroup/autosub/tree/([\\d.]+)-alpha"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/BingLingGroup/autosub/releases/download/$version-alpha/autosub-$version-alpha-win-x64-nuitka.7z"
     }

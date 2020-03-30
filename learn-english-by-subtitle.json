@@ -1,0 +1,20 @@
+{
+  "homepage": "https://github.com/studyzy/LearnEnglishBySubtitle",
+  "description": "深蓝英文字幕助手，是一款学习英语的辅助工具，可以通过记录用户的词汇量，然后对英文字幕中不认识的单词进行注释，做到摆脱中文字幕看懂美剧英剧。",
+  "version": "1.0.1",
+  "url": "https://github.com/studyzy/LearnEnglishBySubtitle/releases/download/v1.0.1/Release1.0.1.zip",
+    "hash":"d6f98ce864ca568970df05296bfc925eaaa0851e41c5ed106321e1b224b38ef4",
+    "extract_dir": "Release",
+  "bin": "深蓝英文字幕助手.exe",
+  "shortcuts": [
+    [
+      "深蓝英文字幕助手.exe",
+      "深蓝英文字幕助手"
+    ]
+  ],
+  "checkver":"github",
+  "autoupdate": {
+        "url": "https://github.com/studyzy/LearnEnglishBySubtitle/releases/download/v$Version/Release$Version.zip"
+   },
+   "notes":"didn't persist anything"
+}

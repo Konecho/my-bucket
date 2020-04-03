@@ -1,0 +1,65 @@
+{
+    "homepage": "https://calibre-ebook.com/",
+    "version": "4.13.0",
+    "description": "Powerful and easy to use e-book manager.（魔改流程，需要sudo安装）",
+    "license": "GPL-3.0-only",
+    "url": "https://www.fosshub.com/Calibre.html/calibre-portable-installer-4.13.0.exe",
+    "hash": "f73fd5dca905b8c6c076ff5ed24bcd6e665073f7a87ea7231d4a020540902957",    
+    "pre_install": "New-Item -itemtype symboliclink -path \"$dir\\Calibre Portable\" -value $dir",
+    "post_install": "(Get-Item \"$dir\\Calibre Portable\").Delete()",
+    "persist": [
+        "Calibre Library",
+        "Calibre Settings"
+    ],
+    "installer": {
+        "args": "\"$dir\""
+    },
+    "bin": [
+        [
+            "calibre-portable.exe",
+            "calibre"
+        ],
+        "Calibre\\calibre-customize.exe",
+        "Calibre\\calibredb.exe",
+        "Calibre\\calibre-debug.exe",
+        "Calibre\\calibre-server.exe",
+        "Calibre\\calibre-smtp.exe",
+        "Calibre\\ebook-convert.exe",
+        "Calibre\\ebook-device.exe",
+        "Calibre\\ebook-edit.exe",
+        "Calibre\\ebook-meta.exe",
+        "Calibre\\ebook-polish.exe",
+        "Calibre\\ebook-viewer.exe",
+        "Calibre\\fetch-ebook-metadata.exe",
+        "Calibre\\lrf2lrs.exe",
+        "Calibre\\lrs2lrf.exe",
+        "Calibre\\lrfviewer.exe",
+        "Calibre\\markdown-calibre.exe",
+        "Calibre\\web2disk.exe"
+    ],
+    "shortcuts": [
+        [
+            "calibre-portable.exe",
+            "Calibre"
+        ],
+        [
+            "Calibre\\ebook-edit.exe",
+            "Calibre E-Book Editor"
+        ],
+        [
+            "Calibre\\ebook-viewer.exe",
+            "Calibre E-Book Viewer"
+        ],
+        [
+            "Calibre\\lrfviewer.exe",
+            "Calibre LRF Viewer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.fosshub.com/Calibre.html",
+        "regex": "softwareVersion\">([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.fosshub.com/Calibre.html/calibre-portable-installer-$version.exe"
+    }
+}

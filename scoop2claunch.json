@@ -1,0 +1,1 @@
+{ version: "1.0", url: "https://raw.githubusercontent.com/Konecho/Scoop2CLaunch/master/scoop2claunch.ps1", bin: "scoop2claunch.ps1" }

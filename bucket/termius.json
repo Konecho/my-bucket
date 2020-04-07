@@ -1,0 +1,24 @@
+{
+    "version": "5.7.2",
+    "homepage": "https://termius.com/windows",
+    "description": "Termius is the SSH client that works on Desktop and Mobile",
+    "url": "https://autoupdate.termius.com/win/Termius.exe#/dl.7z",
+    "hash": "C86D0A1B991B732810052DBD425FB2F3A19EC37E4E65BD466F721269C884149F",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "bin": "Termius.exe",
+    "shortcuts": [
+        [
+            "Termius.exe",
+            "Termius"
+        ]
+    ],
+    "checkver": {
+        "regex": "Version ([\\d.]+) - Released"
+    },
+    "autoupdate": {
+        "url": "https://autoupdate.termius.com/win/Termius.exe#/dl.7z"
+    }
+}

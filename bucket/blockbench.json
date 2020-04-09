@@ -1,0 +1,22 @@
+{
+    "version": "3.4.2",
+    "homepage": "https://blockbench.net/",
+    "description": "Blockbench is a free, modern model editor for boxy models and pixel art textures. ",
+    "url": "https://github.com/JannisX11/blockbench/releases/download/v3.4.2/Blockbench_portable_3.4.2.exe#/dl.7z",
+    "hash": "8449B7B1E159BC61D76568449866956D7702535EF996C0328DE7C36C724106BC",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+    "##post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "bin": "Blockbench_portable.exe",
+    "shortcuts": [
+        [
+            "Blockbench_portable.exe",
+            "Blockbench portable"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/JannisX11/blockbench/releases/download/v$version/Blockbench_portable_$version.exe#/dl.7z"
+    }
+}

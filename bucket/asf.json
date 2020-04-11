@@ -1,24 +1,25 @@
 {
-  "homepage": "https://github.com/JustArchiNET/ArchiSteamFarm",
-  "description": "C# application with primary purpose of idling Steam cards from multiple accounts simultaneously.",
-  "license": "Apache-2.0",
-  "version": "4.1.2.3",
-  "url": "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/4.1.2.3/ASF-win-x64.zip",
-  "hash": "8F0E4B6D044BEDFD732BD25EE37D6D504DC721707A1C3D64EB1AA6252442672F",
-  "bin": [
+    "homepage": "https://github.com/JustArchiNET/ArchiSteamFarm",
+    "description": "C# application with primary purpose of idling Steam cards from multiple accounts simultaneously.",
+    "license": "Apache-2.0",
+    "version": "4.2.0.1",
+    "url": "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/4.2.0.1/ASF-win-x64.zip",
+    "hash": "c8ba0f80d127e703c911f188ce2992cbb5feaa59ef431a54f049acc41fc4d113",
+    "bin": [
         [
             "ArchiSteamFarm.exe",
             "asf"
         ]
     ],
-  "shortcuts": [
-    [
-      "ArchiSteamFarm.exe",
-      "ASF"
-    ]
-  ],
-  "persist": [
-    "config"
-  ],
-  "checkver": "github"
+    "shortcuts": [
+        [
+            "ArchiSteamFarm.exe",
+            "ASF"
+        ]
+    ],
+    "persist": "config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/$version/ASF-win-x64.zip"
+    }
 }

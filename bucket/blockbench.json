@@ -15,7 +15,9 @@
             "Blockbench portable"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/JannisX11/blockbench"
+    },
     "autoupdate": {
         "url": "https://github.com/JannisX11/blockbench/releases/download/v$version/Blockbench_portable_$version.exe#/dl.7z"
     }

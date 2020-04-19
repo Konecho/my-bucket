@@ -1,0 +1,27 @@
+﻿{
+    "version": "5.0",
+    "license": "Apache-2.0",
+    "url": "https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V5.0/BilibiliDown.v5.0.release.zip",
+    "suggest": {
+        "JRE": [
+            "java/oraclejre",
+            "java/openjre"
+        ]
+    },
+    "homepage": "https://github.com/nICEnnnnnnnLee",
+    "hash": "B1E3639D9A0C5297E3F12385A422BFA97163EAFACFCB184DB4801ADB731E262C",
+    "bin": [
+        "run-UI.bat"
+    ],
+    "shortcuts": [
+        [
+            "run-UI.bat",
+            "BilibiliDown-UI.bat"
+        ]
+    ],
+    "persist": "config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V$version/BilibiliDown.v$version.release.zip"
+    }
+}

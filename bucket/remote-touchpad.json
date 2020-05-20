@@ -1,0 +1,27 @@
+{
+  "homepage": "https://github.com/Unrud/remote-touchpad/",
+  "description": "Control mouse and keyboard from a smartphone",
+  "license": "GPL-3.0",
+  "version": "0.0.18",
+  "url": "https://github.com/Unrud/remote-touchpad/releases/download/0.0.18/remote-touchpad_windows_amd64.exe",
+  "hash": "127CC2B6D5B1B4768CCEFDD09568AD009440F709D296A60BEEEF3E6905621BDD",
+  "bin": [
+        [
+            "remote-touchpad_windows_amd64.exe",
+            "remote-touchpad"
+        ]
+    ],
+  "#shortcuts": [
+    [
+      "wt-run.bat",
+      "remote-touchpad-wt"
+    ]
+  ],
+  "pre_install": [
+    "New-Item -Force -Path \"$dir\\wt-run.bat\" -ItemType File -Value \"wt.exe remote-touchpad_windows_amd64.exe\" | Out-Null"
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/Unrud/remote-touchpad/releases/download/$version/remote-touchpad_windows_amd64.exe"
+  }
+}

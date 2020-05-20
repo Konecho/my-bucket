@@ -1,0 +1,22 @@
+{
+  "homepage": "https://github.com/kenvix/USBCopyer",
+  "description": "😉 用于在插上U盘后自动按需复制该U盘的文件。”备份&偷U盘文件的神器”（写作USBCopyer，读作USBCopier） https://kenvix.com/post/usbcopyer/",
+  "license": "GPL-3.0",
+  "version": "5.11",
+  "url": "https://github.com/kenvix/USBCopyer/releases/download/V5.11/USBCopyer.Release.exe",
+  "hash": "F032C10A61E2E24A422308B88908A39BC9172F9EFA78B4E6879E3BAF7C70C233",
+  "bin": "USBCopyer.Release.exe",
+  "shortcuts": [
+    [
+      "USBCopyer.Release.exe",
+      "USBCopyer"
+    ]
+  ],
+  "persist": [
+    "USBCopyerData"
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/kenvix/USBCopyer/releases/download/V$version/USBCopyer.Release.exe"
+  }
+}

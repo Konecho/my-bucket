@@ -1,0 +1,14 @@
+{
+  "homepage": "http://ipe.otfried.org/",
+  "version": "7.2.16",
+  "url": "https://dl.bintray.com/otfried/generic/ipe/7.2/ipe-7.2.16-win64.zip",
+  "hash": "bd7d15486ce5686226544aad6e4e05c1a1dd016c26e9c73093a7bb9e7d52a731",
+  "extract_dir": "ipe-7.2.16",
+  "bin": "bin\\ipe.exe",
+  "shortcuts": [
+    [
+      "bin\\ipe.exe",
+      "Ipe"
+    ]
+  ]
+}

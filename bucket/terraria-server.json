@@ -1,0 +1,16 @@
+{
+  "homepage": "https://terraria.org/",
+  "version": "1.4.0.2",
+  "url": "https://terraria.org/system/dedicated_servers/archives/000/000/036/original/terraria-server-1402.zip?1589675482",
+  "hash": "0F01279B0B5DEF14F60985BC025302685F3E96BC1E647606ACD6017946B91B49",
+  "extract_dir": "1402\\Windows\\",
+  "shortcuts": [
+    [
+      "start-server.bat",
+      "terraria-server"
+    ]
+  ],
+  "persist": [
+    "serverconfig.txt"
+  ]
+}

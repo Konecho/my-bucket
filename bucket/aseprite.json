@@ -1,0 +1,13 @@
+{
+  "homepage": "https://www.aseprite.org/",
+  "description": "Animated sprite editor & pixel art tool",
+  "version": "1.2.27",
+  "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRhLVZhSFM3R2RmOUJ1RXc_ZT1jR0pSemE.7z",
+  "hash": "F82C2486398CB34744E140FEB9BC53BB3D704FD2CF5731DF834CD12C08893D8C",
+  "shortcuts": [
+    [
+      "aseprite.exe",
+      "Aseprite"
+    ]
+  ]
+}

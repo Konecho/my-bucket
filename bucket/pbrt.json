@@ -1,0 +1,34 @@
+{
+  "homepage": "https://pbrt.org/",
+  "license": "BSD-2-Clause License",
+  "version": "3",
+  "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRaN1FNSXM2R0xIR3h1Ync_ZT1WUlZiclA.7z",
+  "hash": "650F091AD365A7409E097DE623F40E7BC97497CAEC00C6CB971BA055A96A3756",
+  "extract_dir": "pbrt-v3",
+  "bin": [
+    [
+      "pbrt.exe",
+      "pbrt"
+    ],
+    [
+      "pbrt_test.exe",
+      "pbrt_test"
+    ],
+    [
+      "obj2pbrt.exe",
+      "obj2pbrt"
+    ],
+    [
+      "imgtool.exe",
+      "imgtool"
+    ],
+    [
+      "cyhair2pbrt.exe",
+      "cyhair2pbrt"
+    ],
+    [
+      "bsdftest.exe",
+      "bsdftest"
+    ]
+  ]
+}

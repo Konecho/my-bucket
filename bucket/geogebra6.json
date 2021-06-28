@@ -1,0 +1,28 @@
+{
+  "homepage": "https://wiki.geogebra.org/en/Reference:GeoGebra_Installation",
+  "version": "6.0.646.0",
+  "url": "https://download.geogebra.org/package/win-port6",
+  "hash": "84EFBE59ECA101DA6E27E716D8AA85497401CBACCEEAE6521818908B63746628",
+  "shortcuts": [
+    [
+      "GeoGebra.exe",
+      "GeoGebra 6"
+    ],
+    [
+      "GeoGebraCalculator.exe",
+      "GeoGebra 6\\计算器套件"
+    ],
+    [
+      "GeoGebraCAS.exe",
+      "GeoGebra 6\\CAS 计算器"
+    ],
+    [
+      "GeoGebraGeometry.exe",
+      "GeoGebra 6\\几何"
+    ],
+    [
+      "GeoGebraGraphing.exe",
+      "GeoGebra 6\\图形计算器"
+    ]
+  ]
+}

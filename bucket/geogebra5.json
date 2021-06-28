@@ -1,7 +1,7 @@
 {
   "homepage": "https://wiki.geogebra.org/en/Reference:GeoGebra_Installation",
   "version": "5.0.647.0",
-  "url": "https://download.geogebra.org/package/win-port",
+  "url": "https://download.geogebra.org/package/win-port#/dl.7z",
   "hash": "7017370019C4DFAFA1E86CD7D61D006CF37DD2E6FFC28BBA94EF79890E705538",
   "extract_dir": "GeoGebra 5.0.647.0",
   "shortcuts": [

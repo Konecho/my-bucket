@@ -1,0 +1,20 @@
+{
+  "homepage": "https://github.com/winsw/",
+  "description": "A wrapper executable that can run any executable as a Windows service, in a permissive license.",
+  "license": "MIT",
+  "version": "3.0.0-alpha.9",
+  "url": "https://github.com/winsw/winsw/releases/download/v3.0.0-alpha.9/WinSW-x64.zip",
+  "hash": "ED67A03B4EA91EE507852FF79466635090EC894D4606D8E41DCFA616DF364322",
+  "bin": [
+    [
+      "WinSW.exe",
+      "winsw"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/winsw/"
+  },
+  "autoupdate": {
+    "url": "https://github.com/winsw/winsw/releases/download/v$version/WinSW-x64.zip"
+  }
+}

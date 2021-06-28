@@ -1,0 +1,33 @@
+{
+  "homepage": "https://pbrt.org/",
+  "license": "BSD-2-Clause License",
+  "version": "3_PBRT_SAMPLED_SPECTRUM",
+  "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRiMXNnbzlzSVYtMDY3WGc_ZT0zVFhmcEM.7z",
+  "hash": "3AB6D5B2A5502C078754CD8A77BE49F345AED09C25D143244D7C7D7E1957BB1B",
+  "bin": [
+    [
+      "pbrt.exe",
+      "pbrt"
+    ],
+    [
+      "pbrt_test.exe",
+      "pbrt_test"
+    ],
+    [
+      "obj2pbrt.exe",
+      "obj2pbrt"
+    ],
+    [
+      "imgtool.exe",
+      "imgtool"
+    ],
+    [
+      "cyhair2pbrt.exe",
+      "cyhair2pbrt"
+    ],
+    [
+      "bsdftest.exe",
+      "bsdftest"
+    ]
+  ]
+}

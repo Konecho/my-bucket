@@ -1,4 +1,6 @@
 # my-bucket
+更新方法：在根目录执行 `.\bin\checkver.ps1 -u`
+
 添加
 ```ps
 scoop bucket add my-bucket https://github.com/Konecho/my-bucket

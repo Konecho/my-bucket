@@ -1,14 +1,10 @@
 {
-    "version": "1.2.1",
+    "version": "3.3.0",
     "homepage": "https://github.com/zenghongtu/PPet/",
     "description": "👻在你的桌面放一个萌妹子，多一点趣味😏~",
     "license": "MIT",
-    "url": "https://github.com/zenghongtu/PPet/releases/download/v1.2.1/PPet-1.2.1.exe#/dl.7z",
-    "hash": "c761b09d0b16c8d9eba0ddcf6082da0b01f60ea0550c4e30ba93b4bbb373cb21",
-    "installer": {
-        "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
-        },
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "url": "https://github.com/zenghongtu/PPet/releases/download/v3.3.0/PPet3-v3.3.0-win-x64.zip",
+    "hash": "2979a0f7d7bc65e7eec1f12ce50124eb25dd772fe6039b525273e97cd10986ab",
     "bin": "PPet.exe",
     "shortcuts": [
         [
@@ -20,6 +16,6 @@
         "github": "https://github.com/zenghongtu/PPet/"
     },
     "autoupdate": {
-        "url": "https://github.com/zenghongtu/PPet/releases/download/v$version/PPet-$version.exe#/dl.7z"
+        "url": "https://github.com/zenghongtu/PPet/releases/download/v$version/PPet3-v$version-win-x64.zip"
     }
 }

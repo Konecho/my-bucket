@@ -1,10 +1,10 @@
 {
     "homepage": "https://calibre-ebook.com/",
-    "version": "4.13.0",
+    "version": "5.41.0",
     "description": "Powerful and easy to use e-book manager.（魔改流程，需要sudo安装）",
     "license": "GPL-3.0-only",
-    "url": "https://www.fosshub.com/Calibre.html/calibre-portable-installer-4.13.0.exe",
-    "hash": "f73fd5dca905b8c6c076ff5ed24bcd6e665073f7a87ea7231d4a020540902957",    
+    "url": "https://www.fosshub.com/Calibre.html/calibre-portable-installer-5.41.0.exe",
+    "hash": "71f29fe0989a342c22454c84cd2f7afb2dc0133ea9d1325b35a1a4902ca61177",
     "pre_install": "New-Item -itemtype symboliclink -path \"$dir\\Calibre Portable\" -value $dir",
     "post_install": "(Get-Item \"$dir\\Calibre Portable\").Delete()",
     "persist": [
@@ -56,10 +56,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.fosshub.com/Calibre.html",
-        "regex": "softwareVersion\">([\\d.]+)"
+        "github": "https://github.com/kovidgoyal/calibre"
     },
     "autoupdate": {
-        "url": "https://www.fosshub.com/Calibre.html/calibre-portable-installer-$version.exe"
+        "url": "https://github.com/kovidgoyal/calibre/releases/download/v$version/calibre-portable-installer-$version.exe"
     }
 }

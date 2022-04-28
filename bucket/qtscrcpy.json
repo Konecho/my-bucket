@@ -1,23 +1,21 @@
 {
-  "homepage": "https://github.com/barry-ran/QtScrcpy",
-  "license": "Apache-2.0",
-  "version": "1.3.0",
-  "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v1.3.0/QtScrcpy-win-x64-v1.3.0.zip",
-  "hash": "3B8669941B838D99FEF2D28FF2EC4401F1DAE0162665BFD745448B14CD12D45A",
-  "extract_dir": "QtScrcpy-win-x64-v1.3.0",
-  "bin": "QtScrcpy.exe",
-  "shortcuts": [
-    [
-      "QtScrcpy.exe",
-      "QtScrcpy"
-    ]
-  ],
-  "persist": [
-    "config"
-  ],
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v$version/QtScrcpy-win-x64-v$version.zip",
-    "extract_dir": "QtScrcpy-win-x64-v$version"
-  }
+    "homepage": "https://github.com/barry-ran/QtScrcpy",
+    "license": "Apache-2.0",
+    "version": "1.9.0",
+    "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v1.9.0/QtScrcpy-win-x64-v1.9.0.zip",
+    "hash": "632d2a661c8546452770937cf3873db7b6d3d138a56078c7b1cf424e9e7d0697",
+    "extract_dir": "QtScrcpy-win-x64-v1.9.0",
+    "bin": "QtScrcpy.exe",
+    "shortcuts": [
+        [
+            "QtScrcpy.exe",
+            "QtScrcpy"
+        ]
+    ],
+    "persist": "config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/barry-ran/QtScrcpy/releases/download/v$version/QtScrcpy-win-x64-v$version.zip",
+        "extract_dir": "QtScrcpy-win-x64-v$version"
+    }
 }

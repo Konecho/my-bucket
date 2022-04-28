@@ -1,22 +1,20 @@
 {
-	"homepage": "https://github.com/prezesp/scoop-viewer",
-	"description": "A gui client for scoop",
-	"version": "v0.8.1",
-	"url": "https://github.com/prezesp/scoop-viewer/releases/download/v0.8.1/scoop-viewer.zip",
-	"hash": "2FBC575CD4F537D7CAE88EB42D89FE12472876189EF2D5E870B45FD1E039AC8B",
-	"extract_dir": "scoop-viewer",
-	"bin": "scoopviewer.exe",
-	"shortcuts": [
+    "homepage": "https://github.com/prezesp/scoop-viewer",
+    "description": "A gui client for scoop",
+    "version": "0.10.0",
+    "url": "https://github.com/prezesp/scoop-viewer/releases/download/0.10.0/scoop-viewer.zip",
+    "hash": "10b60bdc8f12d0114bbb90373181997ddfccacad1d294e75541e71638476ddf2",
+    "extract_dir": "scoop-viewer",
+    "bin": "scoopviewer.exe",
+    "shortcuts": [
         [
             "scoopviewer.exe",
             "scoop-viewer"
         ]
     ],
-	"post_install": [
-		"scoop alias add gui scoopviewer"
-	],
-	"checkver": "github",
+    "post_install": "scoop alias add gui scoopviewer",
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/prezesp/scoop-viewer/releases/download/v$version/scoop-viewer.zip"
+        "url": "https://github.com/prezesp/scoop-viewer/releases/download/$version/scoop-viewer.zip"
     }
 }

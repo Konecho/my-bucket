@@ -1,20 +1,21 @@
 {
-  "homepage": "https://github.com/winsw/",
-  "description": "A wrapper executable that can run any executable as a Windows service, in a permissive license.",
-  "license": "MIT",
-  "version": "3.0.0-alpha.9",
-  "url": "https://github.com/winsw/winsw/releases/download/v3.0.0-alpha.9/WinSW-x64.zip",
-  "hash": "ED67A03B4EA91EE507852FF79466635090EC894D4606D8E41DCFA616DF364322",
-  "bin": [
-    [
-      "WinSW.exe",
-      "winsw"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/winsw/"
-  },
-  "autoupdate": {
-    "url": "https://github.com/winsw/winsw/releases/download/v$version/WinSW-x64.zip"
-  }
+    "homepage": "https://github.com/winsw/",
+    "description": "A wrapper executable that can run any executable as a Windows service, in a permissive license.",
+    "license": "MIT",
+    "version": "3.0.0-alpha.10",
+    "url": "https://github.com/winsw/winsw/releases/download/v3.0.0-alpha.10/WinSW-x64.exe",
+    "hash": "ca7291d3ccbbbcebbc154f0da06c9f395625623b58c0a8b68cfe70e7a1477b42",
+    "bin": [
+        [
+            "WinSW-x64.exe",
+            "winsw"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/winsw/winsw/releases",
+        "regex": "v([\\d\\.]+-alpha[\\d\\.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/winsw/winsw/releases/download/v$version/WinSW-x64.exe"
+    }
 }

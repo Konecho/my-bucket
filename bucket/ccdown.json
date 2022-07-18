@@ -1,0 +1,14 @@
+{
+  "homepage": "https://github.com/nathanli97/BiliBiliCCSubtitle",
+  "description": "一个用于下载B站(哔哩哔哩)CC字幕及转换的工具",
+  "license": "Apache-2.0 license",
+  "version": "1.1.4",
+  "url": "https://github.com/nathanli97/BiliBiliCCSubtitle/releases/latest/download/BiliBiliCCSubtitle-x86_64.zip",
+  "hash": "FC2503D21164096BC8C8D7885A2351A92B562EF36094876516A3865ADC24511C",
+  "bin": [
+        [
+            "ccdown.exe",
+            "ccdown"
+        ]
+    ]
+}

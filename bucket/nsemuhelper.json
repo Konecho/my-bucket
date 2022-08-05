@@ -1,0 +1,25 @@
+{
+  "homepage": "https://github.com/YidaozhanYa/NSEmuHelper",
+  "description": "简单高效的 NS 模拟器安装管理辅助工具",
+  "license": "unkonwn",
+  "version": "2.0.0",
+  "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.0/NSEmuHelper_2.0.0.7z",
+  "hash": "sha256:1ff6f6de5f69437186a798884a56d90b18645fb573c4643ad8b0f0ef53575117",
+  "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\Config.json\")) { New-Item \"$dir\\Config.json\" -ItemType File -Value \"{}\" | Out-Null }"
+    ],
+  "persist": [
+    "Config.json"
+  ],
+  "shortcuts": [
+    [
+      "NSEmuHelper.exe",
+      "NSEmuHelper"
+    ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v$version/NSEmuHelper_$version.7z"
+  },
+  "suggest": ["games/yuzu","games/yuzu-pineapple","games/ryujinx"]
+}

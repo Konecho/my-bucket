@@ -65,7 +65,7 @@ create_null("shortcuts",[["app.exe","app"]])
 check_ver = ask_option("checkver")
 if check_ver == 'github':
     cv = {}
-    if 'github' in manifest['homepage']:
+    if not '🐱' in manifest['homepage'].replace('github','🐱'):
         cv['github'] = input('please input github url:\n')
 
     while True:

@@ -1,0 +1,25 @@
+{
+  "homepage": "https://github.com/SkywalkerJi/mdt",
+  "description": "Yu-Gi-Oh! Master Duel Translation Script",
+  "license": "GPL-3.0 license",
+  "version": "0.2.21",
+  "url": "https://github.com/SkywalkerJi/mdt/releases/download/v0.2.21/mdt_v0.2.21.zip",
+  "extract_dir": "mdt",
+  "hash": "sha256:fefb1c095d469ffe36f1771db9842c8720a2861ce2016104cdf2d8939213378b",
+  "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) { New-Item \"$dir\\config.ini\" -ItemType File | Out-Null }"
+    ],
+  "persist": [
+    "config.ini"
+  ],
+  "shortcuts": [
+    [
+      "mdt.exe",
+      "mdt"
+    ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/SkywalkerJi/mdt/releases/download/v$version/mdt_v$version.zip"
+  }
+}

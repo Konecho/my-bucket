@@ -1,25 +1,25 @@
 {
-  "homepage": "https://github.com/YidaozhanYa/NSEmuHelper",
-  "description": "¼òµ¥¸ßÐ§µÄ NS Ä£ÄâÆ÷°²×°¹ÜÀí¸¨Öú¹¤¾ß",
-  "license": "unkonwn",
-  "version": "2.0.0",
-  "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.0/NSEmuHelper_2.0.0.7z",
-  "hash": "sha256:1ff6f6de5f69437186a798884a56d90b18645fb573c4643ad8b0f0ef53575117",
-  "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\Config.json\")) { New-Item \"$dir\\Config.json\" -ItemType File -Value \"{}\" | Out-Null }"
+    "homepage": "https://github.com/YidaozhanYa/NSEmuHelper",
+    "description": "ï¿½òµ¥¸ï¿½Ð§ï¿½ï¿½ NS Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+    "license": "unkonwn",
+    "version": "2.0.2",
+    "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.2/NSEmuHelper_2.0.2.7z",
+    "hash": "df8172c63986f2c8ea6b2a5cc0784e4e33d90e93e32d190ca3f0c8beecbf5070",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Config.json\")) { New-Item \"$dir\\Config.json\" -ItemType File -Value \"{}\" | Out-Null }",
+    "persist": "Config.json",
+    "shortcuts": [
+        [
+            "NSEmuHelper.exe",
+            "NSEmuHelper"
+        ]
     ],
-  "persist": [
-    "Config.json"
-  ],
-  "shortcuts": [
-    [
-      "NSEmuHelper.exe",
-      "NSEmuHelper"
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v$version/NSEmuHelper_$version.7z"
+    },
+    "suggest": [
+        "games/yuzu",
+        "games/yuzu-pineapple",
+        "games/ryujinx"
     ]
-  ],
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v$version/NSEmuHelper_$version.7z"
-  },
-  "suggest": ["games/yuzu","games/yuzu-pineapple","games/ryujinx"]
 }

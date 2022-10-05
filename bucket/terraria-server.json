@@ -1,13 +1,14 @@
 {
   "homepage": "https://terraria.org/",
-  "version": "1.4.0.2",
-  "url": "https://terraria.org/system/dedicated_servers/archives/000/000/036/original/terraria-server-1402.zip?1589675482",
-  "hash": "0F01279B0B5DEF14F60985BC025302685F3E96BC1E647606ACD6017946B91B49",
-  "extract_dir": "1402\\Windows\\",
+  "version": "1.4.4.4",
+  "url": "https://terraria.org/api/download/pc-dedicated-server/terraria-server-1444.zip",
+  "hash": "b11355c025f33f015591a8e7824595b6c94d6e339f3a30c6bb6585728f23fe5b",
+  "extract_dir": "1444\\Windows",
+  "pre_install": "if (!(Test-Path \"$persist_dir\\serverconfig.txt\")) { New-Item \"$dir\\serverconfig.txt\" -ItemType File -Value \"\" | Out-Null }",
   "shortcuts": [
     [
       "start-server.bat",
-      "terraria-server"
+      "start-terraria-server"
     ]
   ],
   "persist": [

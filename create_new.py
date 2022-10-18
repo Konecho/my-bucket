@@ -80,5 +80,6 @@ if check_ver == 'github':
             break
     manifest["autoupdate"] = cv
 ask_option("notes")
-with open(app_name+'.json', 'w+') as f:
+print(manifest)
+with open(app_name+'.json', 'w+',encoding='utf-8') as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)

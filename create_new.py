@@ -1,9 +1,15 @@
 import json
+from pathlib import Path
+import re
+import subprocess
+# cache_path = Path(subprocess.run('scoop config cache_path',
+#                   shell=True, capture_output=True, text=True).stdout)
+
 
 manifest = {}
 app_name = input('input app name:\n')
 if len(app_name) == 0:
-    app_name = 'defalut'
+    app_name = 'test'
 
 
 def ask_required(name):
@@ -51,21 +57,36 @@ def create_null(name, value):
     manifest[name] = value
 
 
-ask_required('homepage')
-ask_required("description")
-ask_option('license')
 ask_required("version")
-
 ask_required("url")
-ask_option("hash")
+
+json_file = f'{app_name}.json'
+
+json.dump(manifest, Path(json_file).open('w'))
+
+dlinfo = subprocess.run(['scoop', 'download',
+                         f'{Path(json_file).absolute()}'], shell=True, capture_output=True, text=True)
+
+dlhash = re.search('[0-9a-f]{64}', dlinfo.stdout)[0]
+if len(dlhash) == 64:
+    print(dlhash)
+    manifest['hash']=dlhash
+else:
+    ask_option("hash")
+ask_option('homepage')
+ask_option("description")
+
+
+ask_option('license')
+
 ask_option("extract_dir")
 ask_list("persist")
-create_null("shortcuts",[["app.exe","app"]])
+create_null("shortcuts", [["app.exe", "app"]])
 
 check_ver = ask_option("checkver")
 if check_ver == 'github':
     cv = {}
-    if not '🐱' in manifest['homepage'].replace('github','🐱'):
+    if not '🐱' in manifest['homepage'].replace('github', '🐱'):
         cv['github'] = input('please input github url:\n')
 
     while True:
@@ -81,5 +102,5 @@ if check_ver == 'github':
     manifest["autoupdate"] = cv
 ask_option("notes")
 print(manifest)
-with open(app_name+'.json', 'w+',encoding='utf-8') as f:
+with open(app_name+'.json', 'w+', encoding='utf-8') as f:
     json.dump(manifest, f, ensure_ascii=False, indent=2)

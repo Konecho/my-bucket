@@ -1,0 +1,18 @@
+{
+    "version": "2.10.0",
+    "description": "A Free/Open Source Gerber Viewer",
+    "homepage": "https://github.com/gerbv/gerbv",
+    "url": "https://github.com/gerbv/gerbv/releases/download/v2.10.0/gerbv_2.10.0_037b94_Windows_amd64.zip",
+    "hash": "a8be9ea85847d1b270e1aeb91a3f7db6a1d9f6f38f3452b175d6b51c0ac5ca51",
+    "bin": "gerbv.exe",
+    "shortcuts": [
+        [
+            "gerbv.exe",
+            "gerbv"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/gerbv/gerbv/releases/download/v$version/gerbv_$version_037b94_Windows_amd64.zip"
+    }
+}

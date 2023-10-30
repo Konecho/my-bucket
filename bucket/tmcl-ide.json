@@ -1,0 +1,15 @@
+{
+    "version": "3.9.0",
+    "description": "Short for Trinamic Motion Control Language-Integrated Development Environment, the TMCL-IDE is an integrated development environment made for developing applications using ADI Trinamic™ modules and chips. The GUI provides tools for easily setting parameters, for visualizing data in real-time, and for developing and debugging stand-alone applications with TMCL.",
+    "homepage": "https://www.analog.com/en/design-center/evaluation-hardware-and-software/motor-motion-control-software/tmcl-ide.html",
+    "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFndTRHMTcycm5xRDNiU3Zmamc_ZT1ZV2FMWWU.zip",
+    "hash": "50e3f517c3f32c5232ad67f4dac41c18e8de6d053db110f7f9afddf5d5d4b3bb",
+    //"extract_dir": "V3.9.0",
+    "bin": "V3.9.0/TMCL-IDE.exe",
+    "shortcuts": [
+        [
+            "V3.9.0/TMCL-IDE.exe",
+            "TMCL-IDE"
+        ]
+    ]
+}

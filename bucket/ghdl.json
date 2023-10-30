@@ -1,0 +1,23 @@
+{
+    "version": "3.0.0",
+    "description": "VHDL 2008/93/87 simulator",
+    "homepage": "https://github.com/ghdl/ghdl",
+    "url": "https://github.com/ghdl/ghdl/releases/download/v3.0.0/ghdl-MINGW32.zip",
+    "hash": "5a2932e070be747dbeb31ee504dd55f6992ca335b6cf44bd0ef7cf00831cb1aa",
+    "extract_dir": "GHDL",
+    "bin": "ghdl.exe",
+    "bin": [
+        [
+            "bin/ghdl.exe",
+            "ghdl"
+        ],
+        [
+            "bin/ghwdump.exe",
+            "ghwdump"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/ghdl/ghdl/releases/download/v$version/ghdl-MINGW32.zip"
+    }
+}

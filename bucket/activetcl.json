@@ -1,0 +1,39 @@
+{
+    "version": "8.6",
+    "description": "The trusted Tcl distribution for Windows, Linux and Mac, pre-bundled with top Tcl/Tk modules.",
+    "homepage": "https://platform.activestate.com/ActiveState/ActiveTcl-8.6/auto-fork",
+    "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFndTRIaVo4VFFIY2E4M2NmN3c_ZT01VDVieUs.zip",
+    "hash": "a73e9c56e85d8d2f13926e350451dbedcafa161b1cfabf64bb8ea7887b7e7a15",
+    "bin": [
+        [
+            "bin/tclsh.exe",
+            "tclsh"
+        ],
+        [
+            "bin/tclsh86t.exe",
+            "tclsh86t"
+        ],
+        [
+            "bin/tclsht.exe",
+            "tclsht"
+        ],
+        [
+            "bin/wish.exe",
+            "wish"
+        ],
+        [
+            "bin/wish86t.exe",
+            "wish86t"
+        ],
+        [
+            "bin/wisht.exe",
+            "wisht"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "bin/wish.exe",
+            "wish"
+        ]
+    ]
+}

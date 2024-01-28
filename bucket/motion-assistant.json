@@ -1,0 +1,15 @@
+{
+  "version": "1.1.9.0",
+  "url": "https://1drv.ms/u/s!AqTHPjn1XgM1gu4WChp7N1xLndqzJQ?e=Ma7omk",
+  "hash": "01e6a52a8509b1400746ae91072b4e7a8c9931896322db3700785829f017cc0c",
+  "homepage": "https://space.bilibili.com/361065271",
+  "description": "体感助手",
+  "license": "Freeware",
+  "extract_dir": "MotionAssistant",
+  "shortcuts": [
+    [
+      "MotionAssistant.exe",
+      "MotionAssistant"
+    ]
+  ]
+}

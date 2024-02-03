@@ -2,9 +2,9 @@
     "homepage": "https://github.com/go-shiori/shiori",
     "description": "Simple bookmark manager built with Go",
     "license": "MIT",
-    "version": "1.5.3",
-    "url": "https://github.com/go-shiori/shiori/releases/download/v1.5.3/shiori_1.5.3_Windows_x86_64.tar.gz",
-    "hash": "f5e799e8e659beb7938854dd96ae543a455592220164205af96d38fb1634f39b",
+    "version": "1.5.5",
+    "url": "https://github.com/go-shiori/shiori/releases/download/v1.5.5/shiori_Windows_x86_64.tar.gz",
+    "hash": "7c01d6c61f2633e5af07c6975f822d54244dc2bdb319dfa05d66974c583a5bf7",
     "bin": [
         [
             "shiori.exe",
@@ -14,7 +14,7 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/go-shiori/shiori/releases/download/v$version/shiori_$version_Windows_x86_64.tar.gz"
+        "url": "https://github.com/go-shiori/shiori/releases/download/v$version/shiori_Windows_x86_64.tar.gz"
     },
     "persist": "shiori-data"
 }

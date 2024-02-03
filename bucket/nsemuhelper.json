@@ -2,9 +2,9 @@
     "homepage": "https://github.com/YidaozhanYa/NSEmuHelper",
     "description": "�򵥸�Ч�� NS ģ������װ������������",
     "license": "unkonwn",
-    "version": "2.0.2",
-    "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.2/NSEmuHelper_2.0.2.7z",
-    "hash": "df8172c63986f2c8ea6b2a5cc0784e4e33d90e93e32d190ca3f0c8beecbf5070",
+    "version": "2.0.3",
+    "url": "https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.3/NSEmuHelper_2.0.3.7z",
+    "hash": "686acf63cd478d0a108d9581c1b7ec6d21d8f39fc5061cb9da94beb296aa3482",
     "pre_install": "if (!(Test-Path \"$persist_dir\\Config.json\")) { New-Item \"$dir\\Config.json\" -ItemType File -Value \"{}\" | Out-Null }",
     "persist": "Config.json",
     "shortcuts": [

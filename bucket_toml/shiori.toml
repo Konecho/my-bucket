@@ -1,0 +1,12 @@
+bin = [ [ 'shiori.exe', 'shiori', '--portable' ] ]
+checkver = 'github'
+description = 'Simple bookmark manager built with Go'
+hash = '7c01d6c61f2633e5af07c6975f822d54244dc2bdb319dfa05d66974c583a5bf7'
+homepage = 'https://github.com/go-shiori/shiori'
+license = 'MIT'
+persist = 'shiori-data'
+url = 'https://github.com/go-shiori/shiori/releases/download/v1.5.5/shiori_Windows_x86_64.tar.gz'
+version = '1.5.5'
+
+[autoupdate]
+url = 'https://github.com/go-shiori/shiori/releases/download/v$version/shiori_Windows_x86_64.tar.gz'

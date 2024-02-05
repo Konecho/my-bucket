@@ -1,0 +1,9 @@
+bin = 'mcool.exe'
+description = '极简个性的本地音乐播放器，轻，透明，无边框，嵌入桌面。'
+hash = 'md5:C491400316B34354CD45970E08057941'
+homepage = 'https://mcool.appinn.me/'
+persist = [ 'playlists', 'plugins', 'mcool.ini' ]
+pre_install = [ 'if (!(Test-Path "$persist_dir\mcool.ini")) { New-Item "$dir\mcool.ini" | Out-Null }' ]
+shortcuts = [ [ 'mcool.exe', 'Mcool' ] ]
+url = 'http://blog-static.cnblogs.com/files/diystar/mcooldev.rar'
+version = '3360'

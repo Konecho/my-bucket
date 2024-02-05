@@ -1,0 +1,11 @@
+checkver = 'github'
+description = 'A graphical processor simulator and assembly editor for the RISC-V ISA'
+hash = '1f1b54b4d6e729b398cc29d7f9262434044295d08e45fedca20c7834b55b6f74'
+homepage = 'https://github.com/mortbopet/Ripes'
+license = 'MIT'
+shortcuts = [ [ 'Ripes.exe', 'Ripes' ] ]
+url = 'https://github.com/mortbopet/Ripes/releases/download/v2.2.6/Ripes-v2.2.6-win-x86_64.zip'
+version = '2.2.6'
+
+[autoupdate]
+url = 'https://github.com/mortbopet/Ripes/releases/download/v$version/Ripes-v$version-win-x86_64.zip'

@@ -1,0 +1,14 @@
+bin = [ [ 'WinSW-x64.exe', 'winsw' ] ]
+description = 'A wrapper executable that can run any executable as a Windows service, in a permissive license.'
+hash = 'a2daa6a33a9c2b791ae31d9092e7935c339d1e03e89bfb747618ce2f4e819e20'
+homepage = 'https://github.com/winsw/'
+license = 'MIT'
+url = 'https://github.com/winsw/winsw/releases/download/v3.0.0-alpha.11/WinSW-x64.exe'
+version = '3.0.0-alpha.11'
+
+[autoupdate]
+url = 'https://github.com/winsw/winsw/releases/download/v$version/WinSW-x64.exe'
+
+[checkver]
+regex = 'v([\d\.]+-alpha[\d\.]+)'
+url = 'https://github.com/winsw/winsw/releases'

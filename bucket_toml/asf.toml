@@ -1,0 +1,13 @@
+bin = [ [ 'ArchiSteamFarm.exe', 'asf' ] ]
+checkver = 'github'
+description = 'C# application with primary purpose of idling Steam cards from multiple accounts simultaneously.'
+hash = '35ad9e986d4e4ff0579f425ff742ed1c68b3f7536e34efadbae99ff970aa37d5'
+homepage = 'https://github.com/JustArchiNET/ArchiSteamFarm'
+license = 'Apache-2.0'
+persist = 'config'
+shortcuts = [ [ 'ArchiSteamFarm.exe', 'ASF' ] ]
+url = 'https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/5.5.2.3/ASF-win-x64.zip'
+version = '5.5.2.3'
+
+[autoupdate]
+url = 'https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/$version/ASF-win-x64.zip'

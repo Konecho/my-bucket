@@ -1,0 +1,12 @@
+checkver = 'github'
+description = '一个利用摸鱼时间背单词的软件。'
+extract_dir = 'Release'
+hash = 'c3bf81194ea3bca4babfac302a04eb0af6c5dd4e06ba835f1256fb37fdd8874a'
+homepage = 'https://github.com/Uahh/ToastFish'
+license = 'MIT'
+shortcuts = [ [ 'ToastFish.exe', 'ToastFish' ] ]
+url = 'https://github.com/Uahh/ToastFish/releases/download/3.0/ToastFish.v3.0.zip'
+version = '3.0'
+
+[autoupdate]
+url = 'https://github.com/Uahh/ToastFish/releases/download/$version/ToastFish.v$version.zip'

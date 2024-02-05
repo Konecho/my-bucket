@@ -1,0 +1,14 @@
+bin = [ [ 'qtrvsim_cli.exe', 'qtrvsim' ] ]
+checkver = 'github'
+description = 'RISC-V CPU simulator for education purposes'
+extract_dir = 'qtrvsim-mingw32-v0.9.6'
+hash = 'b335dde0c289cf80693545ed5c7dee02ce82783a6f12a88db7ab07f8976778d6'
+homepage = 'https://github.com/cvut/qtrvsim'
+license = 'GPL-3.0'
+shortcuts = [ [ 'qtrvsim_gui.exe', 'qtrvsim_gui' ] ]
+url = 'https://github.com/cvut/qtrvsim/releases/download/v0.9.6/qtrvsim-mingw32-v0.9.6.zip'
+version = '0.9.6'
+
+[autoupdate]
+extract_dir = 'qtrvsim-mingw32-v$version'
+url = 'https://github.com/cvut/qtrvsim/releases/download/v$version/qtrvsim-mingw32-v$version.zip'

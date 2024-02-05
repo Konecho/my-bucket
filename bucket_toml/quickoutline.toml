@@ -1,0 +1,12 @@
+bin = 'QuickOutline.exe'
+checkver = 'github'
+description = 'Add outline to PDF'
+extract_dir = 'QuickOutline'
+hash = 'f41025358d745b05e4ee7ec468038bb11e3416ac9f81ff1b9c04ec6c5ae43bb0'
+homepage = 'https://github.com/ririv/QuickOutline'
+shortcuts = [ [ 'QuickOutline.exe', 'QuickOutline' ] ]
+url = 'https://github.com/ririv/QuickOutline/releases/download/1.0.1/QuickOutline-win-1.0.1.zip'
+version = '1.0.1'
+
+[autoupdate]
+url = 'https://github.com/ririv/QuickOutline/releases/download/$version/QuickOutline-win-$version.zip'

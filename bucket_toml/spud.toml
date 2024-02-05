@@ -1,0 +1,8 @@
+bin = 'SPUD.exe'
+description = ''
+extract_dir = 'SPUD'
+hash = '17b2a6ed9b24f21fee4aa54ef4c8f6dcd9606c4ae0361a0716d7597e394ba302'
+homepage = 'https://plm.sw.siemens.com/en-US/simcenter/electromagnetics-simulation/speed/'
+shortcuts = [ [ 'SPUD.exe', 'SPUD' ] ]
+url = 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFndTRJek9RSmVFYTBveDNCLVE_ZT0xY1VHcGI.zip'
+version = '2020.2.1'

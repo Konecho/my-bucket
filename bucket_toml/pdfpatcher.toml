@@ -1,0 +1,8 @@
+description = '修改PDF、编辑PDF书签、导出PDF书签、导入书签、 生成、合并、拆分、提取页面内容、提取图片、OCR'
+hash = '9C7CA9575AE96D30B678B505D1E3381E1B0C9B322D1787C8F109708B776CEF94'
+homepage = 'https://www.cnblogs.com/pdfpatcher/'
+persist = [ 'AppConfig.json' ]
+pre_install = [ 'if (!(Test-Path "$persist_dir\AppConfig.json")) { New-Item "$dir\AppConfig.json" | Out-Null }' ]
+shortcuts = [ [ 'PDFPatcher.exe', 'PDF 补丁丁' ] ]
+url = 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRjcnRib0s0Z01FOHFya0E_ZT14dnZtVVc.7z'
+version = '0.6.2.3678'

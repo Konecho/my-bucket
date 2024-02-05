@@ -1,0 +1,7 @@
+description = 'UnityでストライクウィッチーズのStg作ってみる　その4.0'
+extract_dir = 'SwStg_160331'
+hash = 'sha256:c6c99f177016137c0b0de8f7060d2190c104d05334849087ecce3b0e88cf7741'
+homepage = 'https://www.nicovideo.jp/watch/sm28539173'
+shortcuts = [ [ 'SWSt_160331.exe', 'ストライクウィッチーズ' ] ]
+url = 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFndHBvSENtaHZ4NjRxRFRTcUE.zip'
+version = '4.0'

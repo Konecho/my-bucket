@@ -1,0 +1,11 @@
+checkver = 'github'
+description = 'Cross platform GUI wrapper for kflash.py (download(/burn) tool for k210)'
+hash = 'ecc2c66c48a68f1e4913ecab78be165f88a5886f3f9eba5842bf3527bce154d8'
+homepage = 'https://github.com/sipeed/kflash_gui'
+license = 'LGPL-3.0'
+shortcuts = [ [ 'kflash_gui.exe', 'kflash_gui' ] ]
+url = 'https://github.com/sipeed/kflash_gui/releases/download/v1.8.1/kflash_gui_v1.8.1_windows.7z'
+version = '1.8.1'
+
+[autoupdate]
+url = 'https://github.com/sipeed/kflash_gui/releases/download/v$version/kflash_gui_v$version_windows.7z'

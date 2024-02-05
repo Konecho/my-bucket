@@ -1,0 +1,15 @@
+bin = 'run-UI.bat'
+checkver = 'github'
+hash = 'baf1b9dfc983fb1cc93c55e029084d946a338d9be54e756c365a7c941888a5d5'
+homepage = 'https://github.com/nICEnnnnnnnLee/BilibiliDown'
+license = 'Apache-2.0'
+persist = 'config'
+shortcuts = [ [ 'run-UI.bat', 'BilibiliDown-UI.bat' ] ]
+url = 'https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V6.29/BilibiliDown.v6.29.release.zip'
+version = '6.29'
+
+[autoupdate]
+url = 'https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V$version/BilibiliDown.v$version.release.zip'
+
+[suggest]
+JRE = [ 'java/oraclejre', 'java/openjre' ]

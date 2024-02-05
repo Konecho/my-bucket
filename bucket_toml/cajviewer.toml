@@ -1,0 +1,12 @@
+'/extract_dir' = 'CAJViewer 8.1.7z\CAJViewer 8.1'
+description = ''
+hash = '7c0f4b6a16742073557534bd67f0b613df77976fd5308d190d40e54113104c5c'
+homepage = 'https://cajviewer.cnki.net/index.html'
+pre_install = [
+    'Expand-7zipArchive "$dir\CAJViewer 8.1.7z" "$dir"',
+    'Remove-Item "$dir\`$*" -Recurse',
+    'Remove-Item "$dir\CAJViewer 8.1.7z"'
+]
+shortcuts = [ [ 'CAJViewer 8.1/CAJVieweru.exe', 'CAJViewer' ] ]
+url = 'https://download.cnki.net/CAJViewer%208.1_x64-setup.exe#dl.7z'
+version = '8.1'

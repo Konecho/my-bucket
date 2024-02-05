@@ -1,0 +1,8 @@
+description = '体感助手 by bilibili@范东东咚咚'
+extract_dir = 'MotionAssistant'
+hash = '378d093785966c29263e73924cc136119b7d1b15270e2c2c48f89c713ba8c57c'
+homepage = 'https://space.bilibili.com/361065271'
+license = 'Freeware'
+shortcuts = [ [ 'MotionAssistant.exe', 'MotionAssistant' ] ]
+url = 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFndTRXQ2hwN04xeExuZHF6SlE_ZT1NYTdvbWs.zip'
+version = '1.1.9.0'

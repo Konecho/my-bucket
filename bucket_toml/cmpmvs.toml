@@ -1,0 +1,6 @@
+bin = [ [ 'CMPMVS.exe', 'cmpmvs' ] ]
+extract_dir = 'CMPMVS_0_6_0'
+hash = 'B35F84872E3144253DBDB9DCDA88F854596FC7A7D2C2742614A88F32C4D77FEB'
+homepage = 'http://ptak.felk.cvut.cz/sfmservice/websfm.pl?menu=cmpmvs'
+url = 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRZcTQyNjNQRDM2QnJkbVE_ZT13MzVET2w.zip'
+version = '0.6.0'

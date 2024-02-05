@@ -1,0 +1,19 @@
+bin = [ [ 'autosub/autosub.exe', 'autosub' ] ]
+description = 'Autosub是一个字幕自动生成工具。它能使用Auditok来自动检测语音区域，通过ffmpeg根据语音区域来切割音频，通过多个API将语音转为文字，以及通过py-googletrans将字幕文本翻译。'
+extract_dir = 'autosub'
+hash = '05a8a91b3726c7ef2ecc1c15bb416fd69c7ad0b4aad507f1cd484f7a3650b713'
+homepage = 'https://github.com/BingLingGroup/autosub/'
+license = 'GPL-3.0'
+url = 'https://github.com/BingLingGroup/autosub/releases/download/0.5.7-alpha/autosub-0.5.7-alpha-win-x64-nuitka.7z'
+version = '0.5.7'
+
+[autoupdate]
+url = 'https://github.com/BingLingGroup/autosub/releases/download/$version-alpha/autosub-$version-alpha-win-x64-nuitka.7z'
+
+    [autoupdate.hash]
+    regex = '$basename[\S\s]+?$sha256'
+    url = 'https://github.com/BingLingGroup/autosub/releases'
+
+[checkver]
+regex = '([\d\.]+)-alpha'
+url = 'https://github.com/BingLingGroup/autosub/releases'

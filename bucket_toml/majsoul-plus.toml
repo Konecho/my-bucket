@@ -1,0 +1,8 @@
+bin = 'Majsoul Plus.exe'
+description = '雀魂Plus——雀魂麻将Majsoul专用浏览器，提供了一些专有特性'
+hash = 'AB6A79DA95D0633E91C259F5F4326FC2154286A750C9153F142A6D57071CB719'
+homepage = 'https://github.com/MajsoulPlus/majsoul-plus/'
+license = 'AGPL-3.0'
+shortcuts = [ [ 'Majsoul Plus.exe', 'Majsoul Plus' ] ]
+url = 'https://github.com/MajsoulPlus/majsoul-plus/releases/download/v2.0.0-beta.8/Majsoul_Plus-2.0.0-beta.8-win32-x64.zip'
+version = '2.0.0-beta.8'

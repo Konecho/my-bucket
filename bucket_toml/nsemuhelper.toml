@@ -1,0 +1,14 @@
+checkver = 'github'
+description = '🕹️ 简单高效的 NS 模拟器管理工具 (归档)'
+hash = '686acf63cd478d0a108d9581c1b7ec6d21d8f39fc5061cb9da94beb296aa3482'
+homepage = 'https://github.com/YidaozhanYa/NSEmuHelper'
+license = 'unkonwn'
+persist = 'Config.json'
+pre_install = 'if (!(Test-Path "$persist_dir\Config.json")) { New-Item "$dir\Config.json" -ItemType File -Value "{}" | Out-Null }'
+shortcuts = [ [ 'NSEmuHelper.exe', 'NSEmuHelper' ] ]
+suggest = [ 'games/yuzu', 'games/yuzu-pineapple', 'games/ryujinx' ]
+url = 'https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v2.0.3/NSEmuHelper_2.0.3.7z'
+version = '2.0.3'
+
+[autoupdate]
+url = 'https://github.com/YidaozhanYa/NSEmuHelper/releases/download/v$version/NSEmuHelper_$version.7z'

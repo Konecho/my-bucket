@@ -1,0 +1,14 @@
+bin = 'PPet.exe'
+description = '👻在你的桌面放一个萌妹子，多一点趣味😏~'
+hash = '2979a0f7d7bc65e7eec1f12ce50124eb25dd772fe6039b525273e97cd10986ab'
+homepage = 'https://github.com/zenghongtu/PPet/'
+license = 'MIT'
+shortcuts = [ [ 'PPet.exe', 'PPet' ] ]
+url = 'https://github.com/zenghongtu/PPet/releases/download/v3.3.0/PPet3-v3.3.0-win-x64.zip'
+version = '3.3.0'
+
+[autoupdate]
+url = 'https://github.com/zenghongtu/PPet/releases/download/v$version/PPet3-v$version-win-x64.zip'
+
+[checkver]
+github = 'https://github.com/zenghongtu/PPet/'

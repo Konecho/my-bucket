@@ -1,0 +1,8 @@
+description = 'A firmware Flash tool for nodemcu'
+hash = '2a9a5df4ba2e7de0997c97e84c3dc70d5c2d526fe2847604e6c9e563551a9be5'
+homepage = 'https://github.com/nodemcu/nodemcu-flasher'
+license = 'MIT'
+persist = [ 'Config' ]
+shortcuts = [ [ 'ESP8266Flasher.exe', 'ESP8266Flasher' ] ]
+url = 'https://github.com/nodemcu/nodemcu-flasher/raw/master/Win64/Release/ESP8266Flasher.exe'
+version = '20150930'

@@ -1,0 +1,8 @@
+bin = [ [ 'bin/riscv64-unknown-elf-gdb.exe', 'riscv64-unknown-elf-gdb' ] ]
+description = 'GNU toolchain for RISC-V, including GCC'
+extract_dir = 'riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-w64-mingw32'
+hash = 'b12220af94b587f2bb627942f4f57b3da9d4715d16e7c1b2445ea98335208d71'
+homepage = 'https://github.com/riscv-collab/riscv-gnu-toolchain'
+license = 'GNU GENERAL PUBLIC LICENSE'
+url = 'https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-w64-mingw32.zip'
+version = '8.3.0-2020.04.1'

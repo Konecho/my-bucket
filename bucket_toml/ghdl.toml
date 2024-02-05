@@ -1,0 +1,11 @@
+bin = [ [ 'bin/ghdl.exe', 'ghdl' ], [ 'bin/ghwdump.exe', 'ghwdump' ] ]
+checkver = 'github'
+description = 'VHDL 2008/93/87 simulator'
+extract_dir = 'GHDL'
+hash = '5a2932e070be747dbeb31ee504dd55f6992ca335b6cf44bd0ef7cf00831cb1aa'
+homepage = 'https://github.com/ghdl/ghdl'
+url = 'https://github.com/ghdl/ghdl/releases/download/v3.0.0/ghdl-MINGW32.zip'
+version = '3.0.0'
+
+[autoupdate]
+url = 'https://github.com/ghdl/ghdl/releases/download/v$version/ghdl-MINGW32.zip'

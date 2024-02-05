@@ -1,0 +1,8 @@
+extract_dir = '1444\Windows'
+hash = 'b11355c025f33f015591a8e7824595b6c94d6e339f3a30c6bb6585728f23fe5b'
+homepage = 'https://terraria.org/'
+persist = [ 'serverconfig.txt' ]
+pre_install = 'if (!(Test-Path "$persist_dir\serverconfig.txt")) { New-Item "$dir\serverconfig.txt" -ItemType File -Value "" | Out-Null }'
+shortcuts = [ [ 'start-server.bat', 'start-terraria-server' ] ]
+url = 'https://terraria.org/api/download/pc-dedicated-server/terraria-server-1444.zip'
+version = '1.4.4.4'

@@ -1,0 +1,13 @@
+bin = 'DesktopNaotu.exe'
+checkver = 'github'
+description = '桌面版脑图 (百度脑图离线版，思维导图) 跨平台支持 Windows/Linux/Mac OS. (A cross-platform multilingual Mind Map Tool)'
+extract_dir = 'DesktopNaotu-win32-x64'
+hash = '2DC6B98FB719DD1F6BFC04073A54B87F165051B121D0B7292D1A0C40B72D6C15'
+homepage = 'https://github.com/NaoTu/DesktopNaotu/'
+license = 'GPL-2.0'
+shortcuts = [ [ 'DesktopNaotu.exe', '桌面版脑图' ] ]
+url = 'https://github.com/NaoTu/DesktopNaotu/releases/download/v3.2.3/DesktopNaotu-win32-x64.zip'
+version = '3.2.3'
+
+[autoupdate]
+url = 'https://github.com/NaoTu/DesktopNaotu/releases/download/v$version/DesktopNaotu-win32-x64.zip'

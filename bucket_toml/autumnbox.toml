@@ -1,0 +1,10 @@
+bin = 'AutumnBox-秋之盒.exe'
+description = '开源、免费、易用的图形化ADB工具箱'
+extract_dir = 'AutumnBox'
+hash = 'B8A379AB7219CF6DCFB442D66A7CC042B81D59E466F1159AFDC65E4FD6C52FC6'
+homepage = 'https://atmb.top/'
+license = 'LGPL3.0'
+persist = [ 'Logs' ]
+shortcuts = [ [ 'AutumnBox-秋之盒.exe', '秋之盒' ] ]
+url = 'https://atmb.sm9.top/AutumnBox/%E4%B8%BB%E7%A8%8B%E5%BA%8F/AutumnBox-2019.4.13.zip'
+version = '2019.4.13'

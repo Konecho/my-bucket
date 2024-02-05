@@ -1,0 +1,13 @@
+bin = 'scoopviewer.exe'
+checkver = 'github'
+description = 'A gui client for scoop'
+extract_dir = 'scoop-viewer'
+hash = '10b60bdc8f12d0114bbb90373181997ddfccacad1d294e75541e71638476ddf2'
+homepage = 'https://github.com/prezesp/scoop-viewer'
+post_install = 'scoop alias add gui scoopviewer'
+shortcuts = [ [ 'scoopviewer.exe', 'scoop-viewer' ] ]
+url = 'https://github.com/prezesp/scoop-viewer/releases/download/0.10.0/scoop-viewer.zip'
+version = '0.10.0'
+
+[autoupdate]
+url = 'https://github.com/prezesp/scoop-viewer/releases/download/$version/scoop-viewer.zip'

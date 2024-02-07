@@ -2,9 +2,9 @@
     "homepage": "https://github.com/Unrud/remote-touchpad/",
     "description": "Control mouse and keyboard from a smartphone",
     "license": "GPL-3.0",
-    "version": "1.4.5",
-    "url": "https://github.com/Unrud/remote-touchpad/releases/download/v1.4.5/remote-touchpad_windows_amd64.exe",
-    "hash": "1c71cd0d4c1e59627e6649d7f481e552371211157018da458df91c306b6180a9",
+    "version": "1.4.6",
+    "url": "https://github.com/Unrud/remote-touchpad/releases/download/v1.4.6/remote-touchpad_windows_amd64.exe",
+    "hash": "68f7f056afbb92e31e7ebdf23fcb9140e6ca5c63dacc4b55198e75c7a848df71",
     "bin": [
         [
             "remote-touchpad_windows_amd64.exe",

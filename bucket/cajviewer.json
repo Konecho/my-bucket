@@ -1,36 +1,20 @@
 {
-    "version": "8.1",
+    "version": "9.0",
     "description": "",
     "homepage": "https://cajviewer.cnki.net/index.html",
-    "url": "https://download.cnki.net/CAJViewer%208.1_x64-setup.exe#dl.7z",
-    "hash": "7c0f4b6a16742073557534bd67f0b613df77976fd5308d190d40e54113104c5c",
-	"pre_install": [
-		"Expand-7zipArchive \"$dir\\CAJViewer 8.1.7z\" \"$dir\"",
-		"Remove-Item \"$dir\\`$*\" -Recurse",
-		"Remove-Item \"$dir\\CAJViewer 8.1.7z\""
-	],
+    "url": "https://download.cnki.net/CAJViewer%209.0_x64-setup.exe#dl.7z",
+    "hash": "d04c3bde440f485be7a92530a2923aa5dfa127330ddc1dde5c753fd16a8203f9",
     "shortcuts": [
         [
-            "CAJViewer 8.1/CAJVieweru.exe",
+            "CAJViewer.exe",
             "CAJViewer"
         ]
     ],
     "checkver": {
-    	"url": "https://cajviewer.cnki.net/download.html",
-    	"regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
+        "/url": "https://cajviewer.cnki.net/download.html",
+        "regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
     },
     "autoupdate": {
-	"url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z",
-	"pre_install": [
-		"Expand-7zipArchive \"$dir\\CAJViewer $version.7z\" \"$dir\"",
-		"Remove-Item \"$dir\\`$*\" -Recurse",
-		"Remove-Item \"$dir\\CAJViewer $version.7z\""
-	],
-    	"shortcuts": [
-        [
-            "CAJViewer $version/CAJVieweru.exe",
-            "CAJViewer"
-        ]
-    ]
+        "url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z",
     }
 }

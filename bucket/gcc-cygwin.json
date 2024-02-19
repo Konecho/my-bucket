@@ -1,0 +1,46 @@
+{
+    "version": "2.930",
+    "description": "A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows",
+    "homepage": "https://cygwin.com/",
+    "license": {
+        "identifier": "GPL-3.0-or-later,X11,Public Domain",
+        "url": "https://cygwin.com/faq.html#faq.what.free"
+    },
+    "url": [
+        "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe",
+        "https://github.com/Bill-Haku/kawaii-gcc/blob/main/gcc-zh.po"
+    ],
+    "hash": "3d9e0143268f52aecaff76f81553c880ec9a353eb5a6e22bd6d34bad8251710c",
+    "installer": {
+        "file": "cygwin-setup.exe",
+        "args": [
+            "--no-admin",
+            "--no-shortcuts",
+            "--quiet-mode",
+            "--local-package-dir",
+            "$dir\\packages",
+            "--root",
+            "$dir\\root",
+            "--site",
+            "https://mirrors.tuna.tsinghua.edu.cn/cygwin/",
+            "-P",
+            "gcc-core,gcc-g++,gettext,gettext-devel"
+        ]
+    },
+    "env_set": {
+        "LANG": "zh_CN.UTF-8",
+        "LC_MESSAGES": "zh_CN.UTF-8"
+    },
+    "env_add_path": "root\\bin",
+    "pre_install": "persist_data @{persist = @('packages', 'root')} $original_dir $persist_dir",
+    "post_install": [
+        "Rename-Item -Path \"$dir\\root\\usr\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\" -NewName \"$dir\\root\\usr\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo.bak\" -ErrorAction SilentlyContinue",
+        "msgfmt $dir\\gcc-zh.po -o \"$dir\\root\\usr\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\""
+    ],
+    "pre_uninstall": "unlink_persist_data @{persist = @('packages', 'root')} $dir",
+    "checkver": {
+        "url": "https://cygwin.com/git/?p=cygwin-apps/setup.git;a=tags",
+        "regex": ">release_([\\d.]+)<"
+    },
+    "notes": "run `$dir\\root\\bin\\msgfmt $dir\\gcc-zh.po -o \"$dir\\root\\usr\\share\\locale\\zh_CN\\LC_MESSAGES\\gcc.mo\"`"
+}

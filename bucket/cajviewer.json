@@ -18,5 +18,19 @@
     "checkver": {
     	"url": "https://cajviewer.cnki.net/download.html",
     	"regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
+    },
+    "autoupdate": {
+	"url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z",
+	"pre_install": [
+		"Expand-7zipArchive \"$dir\\CAJViewer $version.7z\" \"$dir\"",
+		"Remove-Item \"$dir\\`$*\" -Recurse",
+		"Remove-Item \"$dir\\CAJViewer $version.7z\""
+	],
+    	"shortcuts": [
+        [
+            "CAJViewer $version/CAJVieweru.exe",
+            "CAJViewer"
+        ]
+    ]
     }
 }

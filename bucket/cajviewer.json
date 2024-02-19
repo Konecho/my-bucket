@@ -9,11 +9,14 @@
 		"Remove-Item \"$dir\\`$*\" -Recurse",
 		"Remove-Item \"$dir\\CAJViewer 8.1.7z\""
 	],
-    "/extract_dir": "CAJViewer 8.1.7z\\CAJViewer 8.1",
     "shortcuts": [
         [
             "CAJViewer 8.1/CAJVieweru.exe",
             "CAJViewer"
         ]
-    ]
+    ],
+    "checkver": {
+    	"url": "https://cajviewer.cnki.net/download.html",
+    	"regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
+    }
 }

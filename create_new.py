@@ -1,3 +1,16 @@
+HELP='''
+交互式scoop配方创建
+指令：
+创建，询问必须的属性：app名，版本号，安装包下载url；
+开始调用scoop下载，得到hash，解包看到目录结构；
+添加一个app快捷方式；
+添加一个bin快捷方式；
+写入文件；
+读取文件；
+添加一个persist目录；
+生成一个文本persist；
+生成electron风格的安装脚本；
+'''
 import json
 from pathlib import Path
 import re
@@ -5,21 +18,31 @@ import subprocess
 # cache_path = Path(subprocess.run('scoop config cache_path',
 #                   shell=True, capture_output=True, text=True).stdout)
 
+manifest = None
 
-manifest = {}
-app_name = input('input app name:\n')
-if len(app_name) == 0:
-    app_name = 'test'
-
-
-def ask_required(name):
+def create_new():
     global manifest
+    app_name = input('input app name:\n')
+    if len(app_name) == 0:
+        app_name = 'test'
+    
     res = ''
     while len(res) == 0:
-        res = input(f'please input [{name}]:\n')
-    print(res)
-    manifest[name] = res
-    return res
+        res = input(f'please input version:\n')
+    version=res
+
+    res = ''
+    while len(res) == 0:
+        res = input(f'please input download url:\n')
+    url=res
+
+    if manifest is not None:
+        print(manifest)# 以防不小心覆盖
+    manifest={
+        'version':version,
+        'url':url,
+    }
+
 
 
 def ask_option(name):
@@ -57,8 +80,6 @@ def create_null(name, value):
     manifest[name] = value
 
 
-ask_required("version")
-ask_required("url")
 
 json_file = f'{app_name}.json'
 
@@ -75,8 +96,6 @@ else:
     ask_option("hash")
 ask_option('homepage')
 ask_option("description")
-
-
 ask_option('license')
 
 ask_option("extract_dir")

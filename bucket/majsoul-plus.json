@@ -11,5 +11,9 @@
       "Majsoul Plus.exe",
       "Majsoul Plus"
     ]
-  ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/MajsoulPlus/majsoul-plus/releases/download/v$version/Majsoul_Plus-$version-win32-x64.zip"
+  }
 }

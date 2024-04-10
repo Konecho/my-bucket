@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/Voxelum/x-minecraft-launcher",
     "description": "An Open Source Minecraft Launcher with Modern UX. Provide a Disk Efficient way to manage all your Mods!",
-    "version": "0.43.2",
+    "version": "0.43.3",
     "license": "MIT",
-    "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v0.43.2/xmcl-0.43.2-win32-x64.zip",
-    "hash": "9e905536a165ba1579a38f046e0e7649267ee3f027136e73df1a05fd1578ffc4",
+    "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v0.43.3/xmcl-0.43.3-win32-x64.zip",
+    "hash": "bacec874db5a0a915d413d207bff2ffe8e00f2b10a72015844304e7524158ca4",
     "shortcuts": [
         [
             "X Minecraft Launcher.exe",

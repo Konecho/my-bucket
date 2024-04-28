@@ -1,9 +1,10 @@
 {
   "homepage": "https://www.cnblogs.com/pdfpatcher/",
-  "description": "修改PDF、编辑PDF书签、导出PDF书签、导入书签、 生成、合并、拆分、提取页面内容、提取图片、OCR",
-  "version": "0.6.2.3678",
-  "url": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcVRIUGpuMVhnTTFnczRjcnRib0s0Z01FOHFya0E_ZT14dnZtVVc.7z",
-  "hash": "9C7CA9575AE96D30B678B505D1E3381E1B0C9B322D1787C8F109708B776CEF94",
+  "license": "AGPL",
+  "description": "修改PDF、编辑PDF书签、导出PDF书签、导入书签、生成、合并、拆分、提取页面内容、提取图片、OCR",
+  "version": "1.0.1",
+  "url": "https://github.com/wmjordan/PDFPatcher/releases/download/v1.0.1/PDFPatcher.1.0.1.4220.7z",
+  "hash": "0f78af803c80de8de28c3520ab533f8ff9fa5f8cf294bc936441b106cbc41b24",
   "shortcuts": [
     [
       "PDFPatcher.exe",
@@ -15,5 +16,8 @@
   ],
   "persist": [
     "AppConfig.json"
-  ]
+  ],
+  "checkver": {
+    "github": "https://github.com/wmjordan/PDFPatcher/"
+  }
 }

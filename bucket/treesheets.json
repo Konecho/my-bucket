@@ -1,10 +1,10 @@
 {
-    "version": "10758505627",
+    "version": "10820189557",
     "description": "Free Form Data Organizer",
     "homepage": "https://strlen.com/treesheets/",
     "license": "Zlib",
-    "url": "https://github.com/aardappel/treesheets/releases/download/10758505627/windows_treesheets_no_installer.zip",
-    "hash": "1a5bb255eaa23685eeb5d3b6c748968a0e160a6504bb31f3715293737bc9d0f9",
+    "url": "https://github.com/aardappel/treesheets/releases/download/10820189557/windows_treesheets_no_installer.zip",
+    "hash": "877428525d85a165b888c09690a94cb2c985b2af0ed71ca3ab2b050f62f8339c",
     "extract_dir": "TS",
     "pre_install": [
         "ensure \"$persist_dir\" | Out-Null",

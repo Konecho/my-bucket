@@ -1,7 +1,7 @@
 {
-    "version": "6.35",
+    "version": "6.36",
     "license": "Apache-2.0",
-    "url": "https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V6.35/BilibiliDown.v6.35.release.zip",
+    "url": "https://github.com/nICEnnnnnnnLee/BilibiliDown/releases/download/V6.36/BilibiliDown.v6.36.release.zip",
     "suggest": {
         "JRE": [
             "java/oraclejre",
@@ -9,7 +9,7 @@
         ]
     },
     "homepage": "https://github.com/nICEnnnnnnnLee/BilibiliDown",
-    "hash": "083121494d9366ea509da0ec39efff70d1201f48c3881fd4ad720b646b87e841",
+    "hash": "cd08d13e55bec01af14fefa4ee93045913613d39aa7e5e72b6548af074ef8220",
     "bin": "run-UI.bat",
     "shortcuts": [
         [

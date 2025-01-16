@@ -15,6 +15,6 @@
         "regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
     },
     "autoupdate": {
-        "url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z",
+        "url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z"
     }
 }

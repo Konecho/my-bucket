@@ -48,4 +48,3 @@ for app in (this_bucket / "bucket").glob("*.json"):
     is_duplicate(app)
     if should_add_checkver(app):
         warning(f"[checkver?] {app.stem}")
-        warning(f"[checkver?] {app.stem}")

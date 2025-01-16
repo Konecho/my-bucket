@@ -1,0 +1,23 @@
+{
+    "homepage": "https://bittly.cn/",
+    "description": "A testing tool for serial port, network, bluetooth, http, websocket, ...",
+    "version": "1.23.6",
+    "license": "freeware",
+    "url": "https://res.bittly.cn/download/1.23.6/bittly-1.23.6-x64.exe#dl.7z",
+    "hash": "67a300adc072e9bef464f6c71821b7c32f64da67aea856ce8d52237e21b7763c",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "bittly-un.exe",
+            "bittly"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://res.bittly.cn/download/$version/bittly-$version-x64.exe"
+    }
+}

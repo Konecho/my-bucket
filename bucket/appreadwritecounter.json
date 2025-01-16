@@ -2,9 +2,9 @@
     "homepage": "https://www.nirsoft.net/utils/app_read_write_counter.html",
     "description": "AppReadWriteCounter is a tool for Windows that counts and displays the current file read / write operations of every application running on your system. It displays the number of read/write bytes, the number of read/write operations, current calculated read/write speed, and the details about the application (product name, product version, and so on) that makes the file read/write operations.",
     "license": "freeware",
-    "version": "1.25",
+    "version": "1.42",
     "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip",
-    "hash":"e19833dbb79552be46a30f62c90cdd8ce9f97b4097beed2fa1b3c84402ea1ce5",
+    "hash": "3ce88b0a1f9d4a287e79d22f0b410cc4bb0c1a4331b228c48b0239f061547193",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\AppReadWriteCounter.cfg\")) { New-Item \"$dir\\AppReadWriteCounter.cfg\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\AppReadWriteCounter_lng.ini\")) { New-Item \"$dir\\AppReadWriteCounter_lng.ini\" | Out-Null }"
@@ -19,5 +19,15 @@
     "persist": [
         "AppReadWriteCounter.cfg",
         "AppReadWriteCounter_lng.ini"
-    ]
+    ],
+    "checkver": {
+        "regex": "<td>AppReadWriteCounter v([\\d\\.]+)"
+    },
+    "autoupdate": {
+        "/hash": {
+            "url": "https://github.com/ScoopInstaller/Nirsoft/raw/refs/heads/master/bucket/appreadwritecounter.json",
+            "jsonpath": "$.architecture.64bit.hash"
+        },
+        "url": "https://www.nirsoft.net/utils/appreadwritecounter-x64.zip"
+    }
 }

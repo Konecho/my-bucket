@@ -1,0 +1,24 @@
+{
+    "homepage": "https://github.com/WCHSoftGroup/ch347",
+    "description": "CH347FPGADownloader是一款专用于CH347的FPGA下载软件，结合OpenOCD开源项目实现。",
+    "license": "free",
+    "version": "1.1",
+    "url": "https://github.com/WCHSoftGroup/ch347/releases/download/CH347_OpenOCD_Release/CH347FPGATool.zip",
+    "hash": "df3cb154c081cdbab12d380b87d01617c75c81b045d52e0c28887c3afa7ed8b5",
+    "extract_dir": "CH347FPGATool",
+    "bin": [
+        [
+            "OpenOCD_CH347/bin/openocd.exe",
+            "openocd"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "CH347FpgaDownloadTool.exe",
+            "CH347FpgaDownloadTool"
+        ]
+    ],
+    "persist": [
+        "Logs"
+    ]
+}

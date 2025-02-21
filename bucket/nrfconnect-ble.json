@@ -1,0 +1,35 @@
+{
+  "homepage": "https://github.com/NordicSemiconductor/pc-nrfconnect-ble",
+  "description": "",
+  "version": "4.0.4",
+  "license": "freeware",
+  "url": "https://github.com/NordicPlayground/pc-nrfconnect-ble-standalone/releases/download/v4.0.4/nrfconnect-bluetooth-low-energy-setup-4.0.4-x64.exe#dl.7z",
+  "hash": "6d0c1e6de687882377f2eeb7cb931d5c7f2c8e74fafc5a74303ab033843ad949",
+  "installer": {
+    "script": [
+      "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+      "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse"
+    ]
+  },
+  "shortcuts": [
+    [
+      "nRF Connect for Desktop Bluetooth Low Energy.exe",
+      "nRF Connect for Desktop Bluetooth Low Energy"
+    ]
+  ],
+  "/autoupdate": {
+    "url": {
+      "url": "https://developer.nordicsemi.com/.pc-tools/nrfconnect-apps/pc-nrfconnect-ble.json",
+      "jsonpath": "$.versions.$version.tarballUrl"
+    },
+    "hash": {
+      "url": "https://developer.nordicsemi.com/.pc-tools/nrfconnect-apps/pc-nrfconnect-ble.json",
+      "jsonpath": "$.versions.$version.shasum"
+    }
+  },
+  "checkver": {
+    "url": "https://developer.nordicsemi.com/.pc-tools/nrfconnect-apps/pc-nrfconnect-ble.json",
+    "jsonpath": "$.latestVersion"
+  },
+  "notes": "https://docs.nordicsemi.com/bundle/nrf-connect-ble/page/index.html"
+}

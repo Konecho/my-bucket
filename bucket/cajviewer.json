@@ -1,9 +1,15 @@
 {
-    "version": "9.0",
+    "version": "9.5.0-24360",
     "description": "",
     "homepage": "https://cajviewer.cnki.net/index.html",
-    "url": "https://download.cnki.net/CAJViewer%209.0_x64-setup.exe#dl.7z",
-    "hash": "d04c3bde440f485be7a92530a2923aa5dfa127330ddc1dde5c753fd16a8203f9",
+    "url": "https://download.cnki.net/cajPackage/CAJWinPackage/CAJViewer_9.5.0-24360_x64_Setup.exe#dl.7z",
+    "hash": "bafddae7135c0183c659e9724072041c03ebf7fa59c048c18fc39e876f102a14",
+	"installer": {
+	"script": [
+		"Expand-7zipArchive \"$dir\\app.7z\" \"$dir\"",
+		"Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\", \"$dir\\app.7z\" -Force -Recurse"
+	]
+    },
     "shortcuts": [
         [
             "CAJViewer.exe",
@@ -11,10 +17,10 @@
         ]
     ],
     "checkver": {
-        "/url": "https://cajviewer.cnki.net/download.html",
-        "regex": "/CAJViewer ([\\d\\.]+)_x64-setup\\.exe"
+        "url": "https://cajviewer.cnki.net/download.html",
+        "regex": "<p class=\"d_ver\"><span>V([\\d\\.-]+)_x64</span>"
     },
     "autoupdate": {
-        "url": "https://download.cnki.net/CAJViewer%20$version_x64-setup.exe#dl.7z"
+        "url": "https://download.cnki.net/cajPackage/CAJWinPackage/CAJViewer_$version_x64_Setup.exe#dl.7z"
     }
 }

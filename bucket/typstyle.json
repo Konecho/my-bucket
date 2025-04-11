@@ -1,10 +1,10 @@
 {
-    "version": "0.13.2",
+    "version": "0.13.3",
     "description": "Beautiful and reliable typst code formatter",
     "homepage": "https://github.com/Enter-tainer/typstyle",
     "license": "Apache-2.0 license",
-    "url": "https://github.com/Enter-tainer/typstyle/releases/download/v0.13.2/typstyle-x86_64-pc-windows-msvc.exe",
-    "hash": "5ce2563cc41180fe60a8ed27ea16feeedfe3f1558952a5ae28a79bd98cd87394",
+    "url": "https://github.com/Enter-tainer/typstyle/releases/download/v0.13.3/typstyle-x86_64-pc-windows-msvc.exe",
+    "hash": "b3d8de0a529bb38c7166182f78c6dbc4dcb389ff39f41797deade146695e4d66",
     "bin": [
         [
             "typstyle-x86_64-pc-windows-msvc.exe",

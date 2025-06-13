@@ -1,0 +1,18 @@
+{
+    "version": "0.39",
+    "description": "Konata is an instruction pipeline visualizer for Onikiri2-Kanata/Gem5-O3PipeView formats.",
+    "homepage": "https://github.com/shioyadan/Konata",
+    "url": "https://github.com/shioyadan/Konata/releases/download/v0.39/konata-win32-x64.zip",
+    "hash": "25f7f5ad2279910dbed18f55fe7bc4d07ce3a65d3f0313e218ac5c2b08a7a657",
+	"extract_dir":"konata-win32-x64",
+    "shortcuts": [
+        [
+            "konata.exe",
+            "konata"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/shioyadan/Konata/releases/download/v$version/konata-win32-x64.zip"
+    }
+}

@@ -1,9 +1,9 @@
 {
-    "version": "5.0.1",
+    "version": "5.1.1",
     "description": "VHDL 2008/93/87 simulator",
     "homepage": "https://github.com/ghdl/ghdl",
-    "url": "https://github.com/ghdl/ghdl/releases/download/v5.0.1/ghdl-mcode-5.0.1-mingw64.zip",
-    "hash": "034e8e98481bf86ce06c682630c9fbab26542fb96601cac7472f4aa877c44334",
+    "url": "https://github.com/ghdl/ghdl/releases/download/v5.1.1/ghdl-mcode-5.1.1-mingw64.zip",
+    "hash": "6010047f5341d0e3d66b63166157004a75a49c1ed9a0b6c58725e1f913363b7c",
     "bin": [
         [
             "bin/ghdl.exe",

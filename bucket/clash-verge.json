@@ -1,0 +1,29 @@
+{
+    "version": "2.3.1",
+    "description": "A Clash GUI based on Tauri.",
+    "homepage": "https://github.com/zzzgydi/clash-verge",
+    "license": "GPL-3.0-only",
+    "notes": "zzzgydi/clash-verge has been archived, continue to use 'scoop install extras/clash-verge-rev' instead",
+    "architecture": {
+        "64bit": {
+            "url": "https://api0.moe233.app/clients/cvr/x64.exe#dl.7z",
+            "hash": "d3c506fcc0055901e8a85b8f269e635e952eb9195c4df9e753b8d5a83fe75a6e"
+        }
+    },
+    "shortcuts": [
+        [
+            "clash-verge.exe",
+            "Clash Verge"
+        ]
+    ],
+    "persist": ".config",
+    "post_install": [
+        "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",
+        "    New-Item -Path \"$persist_dir\\.config\\PORTABLE\" -ItemType file | Out-Null",
+        "}"
+    ],
+    "pre_uninstall": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+        "Start-Process \"$dir\\resources\\uninstall-service.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden'; Start-Sleep -Seconds 3"
+    ]
+}

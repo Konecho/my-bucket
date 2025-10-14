@@ -13,6 +13,7 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ririv/QuickOutline/releases/download/$version/QuickOutline-$version-win-portable.zip"
+        "url": "https://github.com/ririv/QuickOutline/releases/download/$version/QuickOutline-windows-$version.zip"
     }
 }
+

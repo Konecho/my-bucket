@@ -1,0 +1,18 @@
+{
+    "version": "0.13.0",
+    "description": "Small and simple software for plotting data from serial port in realtime.",
+    "homepage": "https://github.com/hyOzd/serialplot",
+    "url": "https://github.com/hyOzd/serialplot/releases/download/v0.13.0/serialplot-0.13.0-win64.exe#dl.7z",
+    "hash": "0c5891e77b0be969a8df61faf947ada9be3a67b65f651307ab58e108d5abc7cb",
+    "extract_dir":"bin",
+    "shortcuts": [
+        [
+            "serialplot.exe",
+            "SerialPlot"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/hyOzd/serialplot/releases/download/v$version/serialplot-$version-win64.exe#dl.7z"
+    }
+}

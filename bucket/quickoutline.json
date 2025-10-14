@@ -1,9 +1,9 @@
 {
-    "version": "2.0.0",
+    "version": "2.3.0",
     "description": "Add outline to PDF",
     "homepage": "https://github.com/ririv/QuickOutline",
-    "url": "https://github.com/ririv/QuickOutline/releases/download/2.0.0/QuickOutline-2.0.0-win-portable.zip",
-    "hash": "688299288deeff7804c58d7b0210a5a7b10239c16950553c87febe6501beeedd",
+    "url": "https://github.com/ririv/QuickOutline/releases/download/2.3.0/QuickOutline-windows-2.3.0.zip",
+    "hash": "5834ef9b456793100d8cf35845c4d9545313e805bd752a5e903c347a75671fde",
     "bin": "QuickOutline.exe",
     "shortcuts": [
         [
@@ -16,4 +16,3 @@
         "url": "https://github.com/ririv/QuickOutline/releases/download/$version/QuickOutline-windows-$version.zip"
     }
 }
-

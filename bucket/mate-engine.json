@@ -10,7 +10,10 @@
             "MateEngineX"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url":"https://github.com/shinyflvre/Mate-Engine/tags",
+        "regex":"/releases/tag/Public-Release-([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/shinyflvre/Mate-Engine/releases/download/Public-Release-$version/Public.Release.$version.zip"
     }

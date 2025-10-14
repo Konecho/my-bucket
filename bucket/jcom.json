@@ -1,0 +1,21 @@
+{
+    "homepage": "http://www.jooiee.com/cms/ruanjian/115.html",
+    "description": "串口实时曲线的完美解决方案，自定义协议发送与解析，高性能多通道曲线显示",
+    "version": "1.5.0",
+    "url": "http://www.jooiee.com/uploads/20250907/JComV1.5.0.zip",
+    "hash": "9917227656bb3d683478476ebe648b7f705437ec7b96b49cc684417ac1a0ab56",
+    "shortcuts": [
+        [
+            "JCom.exe",
+            "JCom"
+        ]
+    ],
+    "checkver": {
+        "regex": "href=\"/uploads/\\d{8}/JComV([\\d.]+)\\.zip\"",
+        "replace": "${1}",
+        "find": "href=\"(?<dl_path>/uploads/\\d{8}/JComV[\\d.]+\\.zip)\""
+    },
+    "autoupdate": {
+        "url": "http://www.jooiee.com$matchDl_path"
+    }
+}

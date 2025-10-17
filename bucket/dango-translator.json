@@ -1,0 +1,19 @@
+{
+    "version": "6.0.5",
+    "description": "",
+    "homepage": "https://github.com/PantsuDango/Dango-Translator",
+    "url": "https://dango-static-cm.starivercs.cn/resources/translator/DangoTranslator-v6.0.5-%E7%AE%80%E6%98%93%E7%89%88.zip",
+    "hash": "e0b640dd9d6d2bf40756939fe0a1641058fa9e391131e213d34fa8ba0a67a23d",
+    "shortcuts": [
+        [
+            "DangoTranslator.exe",
+            "团子翻译器"
+        ]
+    ],
+    "checkver": {
+        "regex": "版本号：([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://dango-static-cm.starivercs.cn/resources/translator/DangoTranslator-v$version-%E7%AE%80%E6%98%93%E7%89%88.zip"
+    }
+}

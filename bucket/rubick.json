@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/rubickCenter/rubick",
     "description": "Electron based open source toolbox, free integration of rich plug-ins.",
-    "version": "4.3.5",
+    "version": "4.3.7",
     "license": "MIT",
-    "url": "https://github.com/rubickCenter/rubick/releases/download/v4.3.5/rubick-Setup-4.3.5-x64.exe#dl.7z",
-    "hash": "4a6442a76ff3b64335e1011ece110a1d31482c72f781e4500583628efe470f4e",
+    "url": "https://github.com/rubickCenter/rubick/releases/download/v4.3.7/rubick-Setup-4.3.7-x64.exe#dl.7z",
+    "hash": "fa98cbb8a20d1f341ad09ab7851099df6933a9f42dc0a5047d1e8ca44e3fb0ea",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -17,7 +17,7 @@
             "rubick"
         ]
     ],
-    "checkver":"github",
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/rubickCenter/rubick/releases/download/v$version/rubick-Setup-$version-x64.exe#dl.7z"
     }

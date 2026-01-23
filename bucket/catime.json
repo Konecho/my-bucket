@@ -1,0 +1,32 @@
+{
+    "version": "1.4.0",
+    "description": "A tiny but mighty timer in pure C. Supports clock, countdown, stopwatch, Pomodoro, and fully customizable tray animations (GIFs, CPU/Mem%)💘",
+    "homepage": "https://github.com/vladelaina/Catime",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vladelaina/Catime/releases/download/v1.4.0/catime_1.4.0.exe",
+            "hash": "55e60a358965b55fa423d0a0689774823931369816c61957b28733fae4e70457"
+        }
+    },
+    "shortcuts": [
+        [
+            "catime_1.4.0.exe",
+            "Catime"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+		"shortcuts": [
+			[
+				"catime_$version.exe",
+				"Catime"
+			]
+		],
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vladelaina/Catime/releases/download/v$version/catime_$version.exe"
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
 {
-    "version": "6.1.4",
+    "version": "6.1.5",
     "description": "",
     "homepage": "https://github.com/PantsuDango/Dango-Translator",
-    "url": "https://dango-static-cm.starivercs.cn/resources/translator/DangoTranslator-v6.1.4-%E7%AE%80%E6%98%93%E7%89%88.zip",
-    "hash": "92018cf8068ce4039f5bef31a17934ddaf5f811c2e8bbfb6d7f0806610061d56",
+    "url": "https://dango-static-cm.starivercs.cn/resources/translator/DangoTranslator-v6.1.5-%E7%AE%80%E6%98%93%E7%89%88.zip",
+    "hash": "59c906f0847c080330bd645e532783d85c1c22029e5cc98905c31555ac5be996",
     "shortcuts": [
         [
             "DangoTranslator.exe",

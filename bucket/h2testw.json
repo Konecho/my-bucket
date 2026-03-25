@@ -1,0 +1,24 @@
+{
+    "version": "1.4",
+    "description": "h2testw is a program for checking the speed and memory capacity of flash drives, SD cards and HDD",
+    "homepage": "https://h2testw.org/",
+    "architecture": {
+        "64bit": {
+            "url": "https://h2testw.org/wp-content/uploads/h2testw_1.4.zip",
+            "hash": "0d54b8beca3bc2ebfab543dbe793d52658d278538f9062b816fb77abe2dac187"
+        }
+    },
+    "shortcuts": [
+        [
+            "h2testw.exe",
+            "h2testw"
+        ]
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://h2testw.org/wp-content/uploads/h2testw_$version.zip"
+            }
+        }
+    }
+}

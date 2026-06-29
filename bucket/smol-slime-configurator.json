@@ -1,0 +1,27 @@
+{
+    "version": "9",
+    "url": "https://github.com/ICantMakeThings/SmolSlimeConfigurator/releases/download/Release-V9/SmolSlimeConfiguratorV9-Windows.exe",
+    "hash": "5263a85f89b969513e6a97b3922c1803ead83bf699dab1974ab0471fe0410a26",
+    "homepage": "https://github.com/ICantMakeThings/SmolSlimeConfigurator",
+    "description": "Pure Simple UI Configurator for SlimeVR Smol Slimes (Unofficial)",
+    "license": "MIT",
+    "shortcuts": [
+        [
+            "SmolSlimeConfiguratorV9-Windows.exe",
+            "SmolSlimeConfigurator"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ICantMakeThings/SmolSlimeConfigurator",
+        "regex": "Release-V(\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ICantMakeThings/SmolSlimeConfigurator/releases/download/Release-V$version/SmolSlimeConfiguratorV$version-Windows.exe",
+        "shortcuts": [
+            [
+                "SmolSlimeConfiguratorV$version-Windows.exe",
+                "SmolSlimeConfigurator"
+            ]
+        ]
+    }
+}

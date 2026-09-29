@@ -1,11 +1,11 @@
 {
-    "version": "0.9.8",
-    "url": "https://github.com/cvut/qtrvsim/releases/download/v0.9.8/qtrvsim-mingw32-v0.9.8.zip",
-    "hash": "2e3551c45b669d6e6a67a1486623ec1ec22a26be19ae496323b279281cd0c0ec",
+    "version": "0.9.9",
+    "url": "https://github.com/cvut/qtrvsim/releases/download/v0.9.9/qtrvsim-mingw32-v0.9.9.zip",
+    "hash": "b1e1501fa9e62f3215cdaf0310358bd8ca2c733260885e990bca59c9c1c2a584",
     "homepage": "https://github.com/cvut/qtrvsim",
     "description": "RISC-V CPU simulator for education purposes",
     "license": "GPL-3.0",
-    "extract_dir": "qtrvsim-mingw32-v0.9.8",
+    "extract_dir": "qtrvsim-mingw32-v0.9.9",
     "bin": [
         [
             "qtrvsim_cli.exe",

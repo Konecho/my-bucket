@@ -1,0 +1,28 @@
+{
+    "version": "0.16.0",
+    "description": "Outer Wilds Mod Manager. Download, install, and manage Outer Wilds mods",
+    "homepage": "https://outerwildsmods.com/mod-manager/",
+    "license": "GPL-3.0",
+    "url": "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.16.0/Outer.Wilds.Mod.Manager_0.16.0_x64-setup.exe#/dl.7z",
+    "hash": "e6abae3530dc0df4ca4d10f7da06dfaf5bd2c4dab7141d53c1776f02dd4029ee",
+    "installer": {
+        "script": [
+            "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force",
+            "Remove-Item \"$dir\\uninstall.exe\" -Force"
+        ]
+    },
+    "shortcuts": [
+        [
+            "Outer Wilds Mod Manager.exe",
+            "Outer Wilds Mod Manager"
+        ]
+    ],
+    "notes": "Requires the WebView2 runtime. If the window does not open, run 'scoop install extras/webview2'.",
+    "checkver": {
+        "url": "https://github.com/ow-mods/ow-mod-man/releases.atom",
+        "regex": "releases/tag/gui_v([\\d.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v$version/Outer.Wilds.Mod.Manager_$version_x64-setup.exe#/dl.7z"
+    }
+}

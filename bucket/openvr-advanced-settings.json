@@ -1,0 +1,26 @@
+{
+    "version": "5.8.17",
+    "description": "OpenVR Advanced Settings. A dashboard overlay for SteamVR with playspace mover, statistics, audio, video and chaperone tweaks",
+    "homepage": "https://github.com/OpenVR-Advanced-Settings/OpenVR-AdvancedSettings",
+    "license": "GPL-3.0",
+    "url": "https://github.com/OpenVR-Advanced-Settings/OpenVR-AdvancedSettings/releases/download/5.8.17/AdvancedSettings-5.8.17.7z",
+    "hash": "4f23816a31a9e065893016aa67473fec7deb60dcd1be798b2a61f4368a9210ca",
+    "shortcuts": [
+        [
+            "AdvancedSettings.exe",
+            "OpenVR Advanced Settings"
+        ]
+    ],
+    "suggest": {
+        "Visual C++ Redistributable 2015-2022": "extras/vcredist2022"
+    },
+    "notes": "A SteamVR overlay: launch it once from the shortcut and it registers itself with SteamVR (no admin rights needed). Requires SteamVR to be installed.",
+    "pre_uninstall": "if (Test-Path \"$dir\\AdvancedSettings.exe\") { Start-Process \"$dir\\AdvancedSettings.exe\" -ArgumentList '--force-remove-manifest' -Wait }",
+    "checkver": {
+        "url": "https://github.com/OpenVR-Advanced-Settings/OpenVR-AdvancedSettings/releases.atom",
+        "regex": "releases/tag/(?:v|V)?([\\d.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/OpenVR-Advanced-Settings/OpenVR-AdvancedSettings/releases/download/$version/AdvancedSettings-$version.7z"
+    }
+}

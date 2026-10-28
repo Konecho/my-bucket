@@ -2,9 +2,9 @@
     "homepage": "https://github.com/mortbopet/Ripes",
     "description": "A graphical processor simulator and assembly editor for the RISC-V ISA",
     "license": "MIT",
-    "version": "2.3.0",
-    "url": "https://github.com/mortbopet/Ripes/releases/download/v2.3.0/Ripes-v2.3.0-win-x86_64.zip",
-    "hash": "1c592882ba16aa140fa6d972cd75db84538240ce18d0595cabe244a4ff4edb5c",
+    "version": "2.3.1",
+    "url": "https://github.com/mortbopet/Ripes/releases/download/v2.3.1/Ripes-v2.3.1-win-x86_64.zip",
+    "hash": "610f7753685064a905e113475c648412157e5ec4d361348f5fedc389f843c9af",
     "shortcuts": [
         [
             "Ripes.exe",
